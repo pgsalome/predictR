@@ -4,7 +4,7 @@
 \alias{rf_feature_selection}
 \title{Random Forest Feature Selection}
 \usage{
-rf_feature_selection(DT, CS, S)
+rf_feature_selection(DT, CS, S, run_paralell = TRUE)
 }
 \arguments{
 \item{DT}{A data frame containing the features along with survival time (`S`) and censoring status (`CS`).}

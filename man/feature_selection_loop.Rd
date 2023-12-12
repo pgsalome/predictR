@@ -4,7 +4,7 @@
 \alias{feature_selection_loop}
 \title{Feature Selection Loop}
 \usage{
-feature_selection_loop(DT, outputDir, nrep = 1000)
+feature_selection_loop(DT, outputDir, nrep = 1000, run_parallel = TRUE)
 }
 \arguments{
 \item{DT}{Data frame containing the features and outcome variables.}

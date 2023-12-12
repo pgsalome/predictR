@@ -4,7 +4,14 @@
 \alias{lasso_feature_selection}
 \title{Lasso Feature Selection}
 \usage{
-lasso_feature_selection(DT, CS, S, cv_iter = 200, alpha = 1)
+lasso_feature_selection(
+  DT,
+  CS,
+  S,
+  cv_iter = 100,
+  alpha = 1,
+  run_parallel = TRUE
+)
 }
 \arguments{
 \item{DT}{Data frame containing the features and outcome.}

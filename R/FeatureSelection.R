@@ -8,7 +8,7 @@
 #' @param CS Censoring status.
 #' @param S Survival time or binary indicator for survival.
 #' @importFrom survival Surv
-#' @importFrom Boruta Boruta getSelectedAttributes
+#' @importFrom Boruta Boruta getSelectedAttributes getImpFerns
 #' @return A data frame of selected features and their counts.
 #' @export
 boruta_feature_selection <- function(DT, CS, S) {
@@ -18,9 +18,10 @@ boruta_feature_selection <- function(DT, CS, S) {
   DT$CS <- CS
   DT$S <- S
   if (S[1]=='binary'){
-    boruta <- Boruta(CS ~ ., data = DT, pValue=0.5, mcAdj = TRUE, doTrace =0, maxRuns = 500)
+    boruta <- Boruta(CS ~ ., data = DT, pValue=0.5, mcAdj = TRUE, doTrace = 0,  holdHistory = FALSE,maxRuns = 500)
   } else {
-    boruta <- Boruta(survival::Surv(S, CS) ~ ., data = DT, pValue=0.5, mcAdj = TRUE, doTrace =0, maxRuns = 500)
+    boruta <- Boruta(survival::Surv(S, CS) ~ ., data = DT, pValue=0.5, mcAdj = TRUE, doTrace = 0,
+                     holdHistory = FALSE,maxRuns = 500)
   }
 
   features1 <- getSelectedAttributes(boruta, withTentative = FALSE)
@@ -99,7 +100,11 @@ get_featuresUnivCox <- function(DT, surv, p, NF) {
   res <- t(as.data.frame(univ_results, check.names = FALSE))
   univariate_results <- as.data.frame(res)
   filtered_uv_results <- univariate_results[as.numeric(as.character(univariate_results$p.value)) < p, ]
-  HR <- as.numeric(levels(filtered_uv_results$HR))[filtered_uv_results$HR]
+
+  # Print HR to verify
+  HR <- as.numeric(as.character(filtered_uv_results$HR))
+
+  # Calculating Inverse or same HR
   IHR <- sapply(HR, function(x) if (x < 1) 1 / x else x)
   sorted_uv_results <- sort(IHR, index.return = TRUE, decreasing = TRUE)
   features <- names(filtered_uv_results$beta[sorted_uv_results$ix[1:NF]])
@@ -122,7 +127,7 @@ univariate_feature_selection <- function(DT, S, CS) {
     filtered_uv_results <- try(get_featuresUnivGlm(DT, CS, p=0.05, NF=nrow(DT)/10), TRUE)
   } else {
     surv <- Surv(S, CS)
-    filtered_uv_results <- try(get_featuresUnivCox(DT, surv, p=0.05, NF=nrow(DT)/10), TRUE)
+    filtered_uv_results <- get_featuresUnivCox(DT, surv, p=0.05, NF=nrow(DT)/10)
   }
   if (!inherits(filtered_uv_results, "try-error")) {
     features0 <- as.character(filtered_uv_results$features)
@@ -143,13 +148,13 @@ univariate_feature_selection <- function(DT, S, CS) {
 #' @param DT Data frame containing the features and the response variable.
 #' @param response_col Name of the column in DT that contains the response variable.
 #' @return A vector of selected feature names based on the mRMR criteria.
-#' @importFrom mRMRe mRMR.data mRMR.ensemble solutions scores
+#' @importFrom mRMRe mRMR.data mRMR.ensemble solutions scores set.thread.count
 #' @importFrom survival Surv
 #' @examples
 #' # Assuming DT is your data frame and 'response' is the response variable
 #' selected_features <- mrmr_feature_selection(DT, "response")
 #' @export
-mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100) {
+mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100, run_parallel=TRUE) {
 
   if (S[1] == 'binary') {
     DT <-  data.frame(target=CS, DT)
@@ -172,9 +177,18 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100) {
       next
     }
   }
+  if (run_parallel) {
+    # Set the number of threads for parallel computation
+    numThreads <- parallel::detectCores()
+    set.thread.count(numThreads)
+  }
   filter <- mRMR.ensemble(data = data, target_indices = 1,
                 feature_count = max_feature_count , solution_count = solution_count)
 
+  if (run_parallel) {
+    # Reset thread count to default (optional)
+    set.thread.count(1)
+  }
   # Assuming 'filter' is your mRMR filter object
   solution_matrices <- solutions(filter)
   solution_scores <- scores(filter)
@@ -215,7 +229,6 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100) {
 }
 
 
-
 #' Random Forest Feature Selection
 #'
 #' This function implements the Random Forest Importance method for feature selection. It utilizes the Random Forest algorithm to assess the importance of each feature in the dataset. The function is designed to handle both binary and survival outcome data.
@@ -227,7 +240,7 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100) {
 #' @return A vector of selected feature names ranked by their importance.
 #'
 #' @importFrom randomForestSRC var.select
-
+#' @importFrom doParallel registerDoParallel
 #'
 #' @examples
 #' # For binary classification
@@ -238,34 +251,44 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100) {
 #'
 #' @export
 
-rf_feature_selection <- function(DT, CS, S) {
+rf_feature_selection <- function(DT, CS, S,run_paralell = TRUE) {
 
   # Initialize list to store different sets of features
   features_rf <- list()
+  if (run_paralell) {
+    # Register parallel backend
+    options(rf.cores = parallel::detectCores(), mc.cores = parallel::detectCores())
+  }
   # Check if the outcome is binary or survival
   if (S[1] == 'binary') {
     # Binary outcome
     # Ensuring S is part of the data frame
     DT$Outcome <- as.factor(S)  # Ensure the outcome is treated as a factor for classification
     var_select_result_md <- var.select(Outcome ~ ., data = DT, method = "md")
-    var_select_result_vh <- var.select(Outcome ~ ., data = DT, method = "vh")
+    #var_select_result_vh <- var.select(Outcome ~ ., data = DT, method = "vh")
     var_select_result_vhvimp <- var.select(Outcome ~ ., data = DT, method = "vh.vimp")
 
-    rf_model <- rfsrc(Outcome ~ ., data = DT, ntree = 100, na.action = "na.omit")
+    #rf_model <- rfsrc(Outcome ~ ., data = DT, ntree = 100, na.action = "na.omit",parallel = parallel)
   } else {
     # Survival outcome
     # Ensuring S and CS are part of the data frame
     DT$Time <- S
     DT$Status <- CS
+    #rf_model <- rfsrc(Surv(Time, Status) ~ ., data = DT, ntree = ntree,
+    #                  na.action = "na.omit", parallel = parallel)
+
     var_select_result_md <- var.select(Surv(Time, Status) ~ ., data = DT, method = "md")
-    var_select_result_vh <- var.select(Surv(Time, Status) ~ ., data = DT, method = "vh")
+    #var_select_result_vh <- var.select(Surv(Time, Status) ~ ., data = DT, method = "vh")
     var_select_result_vhvimp <- var.select(Surv(Time, Status) ~ ., data = DT, method = "vh.vimp")
   }
 
   features_rf[["rfmd"]] <- var_select_result_md$topvars
-  features_rf[["rfvh"]] <- var_select_result_vh$topvars
+  #features_rf[["rfvh"]] <- var_select_result_vh$topvars
   features_rf[["rfvhvimp"]] <- var_select_result_vhvimp$topvars
 
+  if (run_paralell) {
+    stopImplicitCluster()  # Stop parallel backend
+  }
   return(features_rf)
 }
 
@@ -332,7 +355,7 @@ xgboost_feature_selection <- function(DT, CS, S, nrounds = 100, N = 10) {
 #' @param S Survival time or binary indicator for survival.
 #' @return A data frame of selected features and their counts.
 #' @export
-lasso_feature_selection <- function(DT, CS, S, cv_iter=200,alpha=1) {
+lasso_feature_selection <- function(DT, CS, S, cv_iter=100,alpha=1,run_parallel=TRUE) {
 
   if (S[1]=='binary'){
     measure = "auc"
@@ -345,7 +368,7 @@ lasso_feature_selection <- function(DT, CS, S, cv_iter=200,alpha=1) {
   }
   glmnetSTRUCT = list()
   x <- model.matrix(y~.,data=DT)
-  glmnetSTRUCT$glmnet = try(lasso_cv_adjusted(x=x, y=y, cv_iter=cv_iter,pen=NULL,alpha=alpha, measure=measure, family=family), TRUE)
+  glmnetSTRUCT$glmnet = lasso_cv(x=x, y=y, cv_iter=cv_iter,pen=NULL,alpha=alpha, measure=measure, family=family,run_parallel=run_parallel)
   if (!typeof(glmnetSTRUCT$glmnet) == "character"){
     # x = variables, y = outcome
     ## Store selected features for reference: lambda.min is the value of lambda that gives minimum mean-cross-validated error
@@ -511,7 +534,7 @@ perform_pca_feature_selection <- function(DT,apply_varimax=FALSE) {
 #' @export
 #' @importFrom caret createDataPartition
 #
-feature_selection_loop <- function(DT, outputDir, nrep=1000) {
+feature_selection_loop <- function(DT, outputDir, nrep=1000,run_parallel = TRUE) {
   S <- DT$S
   CS <- DT$CS
   DT$sub <- NULL
@@ -526,7 +549,8 @@ feature_selection_loop <- function(DT, outputDir, nrep=1000) {
   } else {
     start_iter <- 1
   }
-
+  if (start_iter>nrep)
+    return(NULL)
   # Initialize separate data frames for each method and a combined data frame
   features_uv <- data.frame(f = character(), count = integer(), stringsAsFactors = FALSE)
   features_boruta <- data.frame(f = character(), count = integer(), stringsAsFactors = FALSE)
@@ -548,20 +572,20 @@ feature_selection_loop <- function(DT, outputDir, nrep=1000) {
     features_boruta <- update_features_df(features_boruta, selected_boruta)
 
     message(paste('Running the lasso feature selection #', j))
-    selected_lasso <- lasso_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],alpha=1)
+    selected_lasso <- lasso_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],alpha=1,run_parallel =run_parallel)
     features_lasso <- update_features_df(features_lasso, selected_lasso)
 
     message(paste('Running the elastic net feature selection #', j))
-    selected_enet <- lasso_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],alpha=0.5)
+    selected_enet <- lasso_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],alpha=0.5,run_parallel =run_parallel)
     features_enet <- update_features_df(features_enet, selected_enet)
 
     message(paste('Running the Minimum Redundancy Maximum Relevance feature selection #', j))
-    selected_mrmr <- mrmr_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind])
+    selected_mrmr <- mrmr_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],run_parallel =run_parallel)
     features_mrmr <- update_features_df(features_mrmr, selected_mrmr)
 
     message(paste('Running xgboost feature selection #', j))
     selected_xgboost <- xgboost_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind])
-    if (j == 1)
+    if (j == start_iter)
       features_xgboost <- setNames(
         replicate(length(selected_xgboost), data.frame(f = character(), count = integer(), stringsAsFactors = FALSE), simplify = FALSE),
         names(selected_xgboost)
@@ -571,7 +595,7 @@ feature_selection_loop <- function(DT, outputDir, nrep=1000) {
     message(paste('Running rf feature selection #', j))
 
     selected_rf <- rf_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind])
-    if (j == 1)
+    if (j == start_iter )
     features_rf <- setNames(
       replicate(length(selected_rf ), data.frame(f = character(), count = integer(), stringsAsFactors = FALSE), simplify = FALSE),
       names(selected_rf)
@@ -580,7 +604,7 @@ feature_selection_loop <- function(DT, outputDir, nrep=1000) {
 
     message(paste('Running the PCA feature selection #', j))
     selected_pca <- perform_pca_feature_selection(DT[train_ind, ])
-    if (j == 1)
+    if (j == start_iter)
       features_pca <- setNames(
         replicate(length(selected_pca), data.frame(f = character(), count = integer(), stringsAsFactors = FALSE), simplify = FALSE),
         names(selected_pca)
@@ -589,7 +613,7 @@ feature_selection_loop <- function(DT, outputDir, nrep=1000) {
 
     message(paste('Running the PCA feature selection with varimax #', j))
     selected_pcavarimax <- perform_pca_feature_selection(DT[train_ind, ],apply_varimax=TRUE)
-    if (j == 1)
+    if (j == start_iter)
       features_pcavarimax<- setNames(
         replicate(length(selected_pcavarimax), data.frame(f = character(), count = integer(), stringsAsFactors = FALSE), simplify = FALSE),
         names(selected_pcavarimax)

@@ -1,3 +1,4 @@
+
 # load_data.R
 
 #' Load and Preprocess Data
@@ -29,12 +30,17 @@ load_data <- function(datacsv, scaledf=FALSE, corrm=TRUE, appendname=FALSE) {
   Data$sub <- NULL
 
   name_to_append <- get_mdroiname(datacsv)
-  name <- substr(name_to_append , start=1, stop=3)
+  name_split <- strsplit(name_to_append, "_")[[1]]
+  name <- name_split[1]
 
-  raddos <- c('adc', 'dds', 'ctt', 'ct1', 'tt2', 'swi', 'flr', 'tt1', 'smt', 'sht', 'ltd', 'ltf', 'ddf')
+  raddos <- c('adc', 'dds', 'ctt', 'ct1', 'tt2',
+              'swi', 'flr', 'tt1', 'smt', 'sht',
+              'letd', 'letdfirst', 'lemd','lemdfirst',
+              "mkm2d","mkm5d","mkm6d","mkm7d","mkm8d","mkm9d","mkm10d")
 
   # Conditional data processing based on file name
-  if (name %in% c('dem', 'lem', 'ltm')) {
+  if (name %in% c('mkm2m', 'mkm5m','mkm6m','mkm7m','mkm8m',
+                  'mkm9m','mkm10m','letm','lemm')) {
     numeric_columns <- sapply(Data, is.numeric)
     #Data <- subset(Data, select=c(mean:max, std, d2:d98, v20, v15))
     Data <- Data[numeric_columns]
@@ -42,7 +48,7 @@ load_data <- function(datacsv, scaledf=FALSE, corrm=TRUE, appendname=FALSE) {
     Data <- subset(Data, select=-c(1:which(colnames(Data) == "original_shape_Elongation") - 1))
   }
   #else {
-    #Data <- subset(Data, select=-c(1:which(colnames(Data) == "cliohe_age") - 1))
+  #Data <- subset(Data, select=-c(1:which(colnames(Data) == "cliohe_age") - 1))
   #  }
 
 
@@ -71,3 +77,4 @@ load_data <- function(datacsv, scaledf=FALSE, corrm=TRUE, appendname=FALSE) {
   Data$sub <- subs
   return(Data)
 }
+

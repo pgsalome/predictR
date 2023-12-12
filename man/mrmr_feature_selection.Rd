@@ -4,7 +4,14 @@
 \alias{mrmr_feature_selection}
 \title{Minimum Redundancy Maximum Relevance Feature Selection}
 \usage{
-mrmr_feature_selection(DT, CS, S, N = 10, solution_count = 100)
+mrmr_feature_selection(
+  DT,
+  CS,
+  S,
+  N = 10,
+  solution_count = 100,
+  run_parallel = TRUE
+)
 }
 \arguments{
 \item{DT}{Data frame containing the features and the response variable.}

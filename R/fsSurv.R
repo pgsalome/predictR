@@ -11,7 +11,7 @@
 #' @param outputDir Directory to save the output files.
 
 #' @export
-fsSurv <- function (datacsv, outcomecsv, outcometype="os", outputDir, nrep ) {
+fsSurv <- function (datacsv, outcomecsv, outcometype, outputDir, nrep,run_parallel ) {
 
   Data <- load_data(datacsv, scaledf = TRUE, corrm = TRUE, appendname = FALSE)
   outcome <- read.csv(outcomecsv, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "")
@@ -22,6 +22,6 @@ fsSurv <- function (datacsv, outcomecsv, outcometype="os", outputDir, nrep ) {
                     "group" = data.frame(sub = outcome$sub, CS = outcome$group, S = 'binary'))
   DT <- merge(Data, outcome, by = 'sub')
 
-  feature_selection_loop(DT, outputDir_md, nrep)
+  feature_selection_loop(DT, outputDir_md, nrep,run_parallel )
 }
 

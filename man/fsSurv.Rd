@@ -4,7 +4,7 @@
 \alias{fsSurv}
 \title{Main Survival Analysis Function}
 \usage{
-fsSurv(datacsv, outcomecsv, outcometype, outputDir, nrep, run_parallel)
+fsSurv(datacsv, outcomecsv, outcometype, outputDir_md, nrep, run_parallel)
 }
 \arguments{
 \item{datacsv}{Path to the CSV file containing the data.}

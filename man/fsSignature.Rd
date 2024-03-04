@@ -4,7 +4,7 @@
 \alias{fsSignature}
 \title{Feature Selection Signature Analysis}
 \usage{
-fsSignature(features_folder, outputDir, freq = 500)
+fsSignature(features_folder, outputDir, freq = 0.9)
 }
 \arguments{
 \item{features_folder}{String path to the folder containing feature data files.}

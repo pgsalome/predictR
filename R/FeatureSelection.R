@@ -15,8 +15,8 @@ boruta_feature_selection <- function(DT, CS, S) {
   features_boruta <- data.frame(f=character(), count=integer(), stringsAsFactors=FALSE)
 
 
-  DT$CS <- CS
-  DT$S <- S
+  # DT$CS <- CS
+  # DT$S <- S
   if (S[1]=='binary'){
     boruta <- Boruta(CS ~ ., data = DT, pValue=0.5, mcAdj = TRUE, doTrace = 0,  holdHistory = FALSE,maxRuns = 500)
   } else {
@@ -60,6 +60,8 @@ get_featuresUnivGlm <- function(DT, group, p, NF) {
     }
   }
   x <- features_all[order(-features_all$p), ][1:min(NF, nrow(features_all)), ]
+  if (nrow(x)==0)
+    return(NULL)
   features <- x$f
   res <- list(features = features)
   return(res)
@@ -101,11 +103,14 @@ get_featuresUnivCox <- function(DT, surv, p, NF) {
   univariate_results <- as.data.frame(res)
   filtered_uv_results <- univariate_results[as.numeric(as.character(univariate_results$p.value)) < p, ]
 
-  # Print HR to verify
-  HR <- as.numeric(as.character(filtered_uv_results$HR))
 
+
+  if (nrow(filtered_uv_results)==0)
+    return(NULL)
   # Calculating Inverse or same HR
+  HR <- as.numeric(as.character(filtered_uv_results$HR))
   IHR <- sapply(HR, function(x) if (x < 1) 1 / x else x)
+
   sorted_uv_results <- sort(IHR, index.return = TRUE, decreasing = TRUE)
   features <- names(filtered_uv_results$beta[sorted_uv_results$ix[1:NF]])
   res <- list(fs = filtered_uv_results, features = features)
@@ -122,14 +127,14 @@ get_featuresUnivCox <- function(DT, surv, p, NF) {
 #' @return A data frame of selected features and their counts.
 #' @export
 univariate_feature_selection <- function(DT, S, CS) {
-  features_uv <- data.frame(f=character(), count=integer(), stringsAsFactors=FALSE)
+  features0 <- NULL
   if (S[1] == 'binary') {
-    filtered_uv_results <- try(get_featuresUnivGlm(DT, CS, p=0.05, NF=nrow(DT)/10), TRUE)
+    filtered_uv_results <- try(get_featuresUnivGlm(DT, CS, p=0.05, NF=nrow(DT)/10), NULL)
   } else {
     surv <- Surv(S, CS)
-    filtered_uv_results <- get_featuresUnivCox(DT, surv, p=0.05, NF=nrow(DT)/10)
+    filtered_uv_results <- try(get_featuresUnivCox(DT, surv, p=0.05, NF=nrow(DT)/10), NULL)
   }
-  if (!inherits(filtered_uv_results, "try-error")) {
+  if (!is.null(filtered_uv_results))  {
     features0 <- as.character(filtered_uv_results$features)
     features0 <- features0[!is.na(features0)]
 
@@ -158,10 +163,11 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100, run_para
 
   if (S[1] == 'binary') {
     DT <-  data.frame(target=CS, DT)
+
     data <- mRMR.data(data = DT)
 
   } else {
-    DT <- data.frame(target=Surv(S, CS), DT)
+    DT <- data.frame(DT,target=Surv(S, CS))
     data <- mRMR.data(data = DT )
 
   }
@@ -182,7 +188,7 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100, run_para
     numThreads <- parallel::detectCores()
     set.thread.count(numThreads)
   }
-  filter <- mRMR.ensemble(data = data, target_indices = 1,
+  filter <- mRMR.ensemble(data = data, target_indices = ncol(DT),
                 feature_count = max_feature_count , solution_count = solution_count)
 
   if (run_parallel) {
@@ -218,6 +224,7 @@ mrmr_feature_selection <- function(DT, CS, S, N=10, solution_count=100, run_para
 
   # Calculate the average score for each feature
   avg_scores <- ifelse(feature_counts > 0, cumulative_scores / feature_counts, 0)
+  avg_scores <- avg_scores[1:ncol(DT)-1]
   # Rank the features based on average scores
   ranked_features <- rank(-avg_scores)  # Negative sign for descending order
   # Select the top 'nrow(DT)/N' features
@@ -580,7 +587,7 @@ feature_selection_loop <- function(DT, outputDir, nrep=1000,run_parallel = TRUE)
     features_enet <- update_features_df(features_enet, selected_enet)
 
     message(paste('Running the Minimum Redundancy Maximum Relevance feature selection #', j))
-    selected_mrmr <- mrmr_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],run_parallel =run_parallel)
+    selected_mrmr <- try(mrmr_feature_selection(DT[train_ind, ], CS[train_ind], S[train_ind],run_parallel =run_parallel),NULL)
     features_mrmr <- update_features_df(features_mrmr, selected_mrmr)
 
     message(paste('Running xgboost feature selection #', j))

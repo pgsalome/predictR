@@ -11,7 +11,7 @@
 #' @param outputDir Directory to save the output files.
 
 #' @export
-fsSurv <- function (datacsv, outcomecsv, outcometype, outputDir, nrep,run_parallel ) {
+fsSurv <- function (datacsv, outcomecsv, outcometype, outputDir_md, nrep,run_parallel ) {
 
   Data <- load_data(datacsv, scaledf = TRUE, corrm = TRUE, appendname = FALSE)
   outcome <- read.csv(outcomecsv, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "")

@@ -9,10 +9,10 @@
 #' @return A list of dataframes processed based on the provided feature set and criteria.
 #' @export
 
-fsSignature <- function(features_folder, outputDir, freq = 500) {
+fsSignature <- function(features_folder, outputDir, freq = 0.90) {
 
   datacsvlists <- Sys.glob(paste(features_folder, "/*", sep = ""))
-  files <- Sys.glob(paste(outputDir,"feature_selection_results/*/*/*.rds", sep = "/"))
+  files <- Sys.glob(paste(outputDir,"feature_selection_results/*/*/*.csv", sep = "/"))
 
   # Extract feature names from files and filter datacsvlists
   feature_names_from_files <- unique(sapply(files, function(file_path) basename(dirname(file_path))))
@@ -22,17 +22,20 @@ fsSignature <- function(features_folder, outputDir, freq = 500) {
   get_mdroidf <- function(csv_list, result_folder, outcometype, freq) {
     print(csv_list)
     name <- get_mdroiname(csv_list)
+    outputDir_md <- paste(outputDir, "/signficant_features_results/", outcome, sep = '')
+    # check_files = list.files(file.path(outputDir_md, name))
+    # if (!dir.exists())
 
     # Load data
     df <- load_data(csv_list, corrm = FALSE, scaledf = TRUE, appendname = TRUE)
 
-    # Get a list of .rds files in the result folder for the specific outcometype
-
-    files <- Sys.glob(paste(outputDir,"feature_selection_results/*", name, "*.rds", sep = "/"))
+    # Get a list of  files in the result folder
+    files <- Sys.glob(paste(outputDir,"feature_selection_results/*", name, "*.csv", sep = "/"))
 
     # Check if no files are present and display a warning message
     if (length(files) == 0) {
       warning(paste("No feature selection was performed for the feature set:", name))
+      # return()
     }
     extract_outcome <- function(file_path) {
       path_parts <- strsplit(file_path, "/")[[1]]
@@ -51,32 +54,55 @@ fsSignature <- function(features_folder, outputDir, freq = 500) {
       # Read feature data for each method and create dataframes
       for (file_path in files) {
         # Get names for saving
-        method <- sub("\\.rds$", "", basename(file_path))
-        features <- readRDS(file_path)
-
-        # Filter features based on frequency and remove "eccentricity" from features
-        valid_features <- features$f[features$count > freq & features$f != "eccentricity"]
-        valid_counts <- features$count[features$count > freq & features$f != "eccentricity"]
-
-        # Check if there are any features left after filtering
-        if (length(valid_features) > 0) {
-          # Create a temporary dataframe with the filtered features
-          temp_df <- df[, c(paste(name,valid_features,sep="_"), 'sub')]
-
-          # Rename the columns by appending the counts
-          colnames(temp_df)[colnames(temp_df) != 'sub'] <- paste(name,valid_features, valid_counts, sep = "_")
-
-          # Store the new dataframe in dfs
-          dfs[[method]] <- temp_df
-        } else {
-          dfs[[method]] <- data.frame(sub = df$sub)  # Assuming 'sub' is a required column
+        method <- sub("\\.csv$", "", basename(file_path))
+        features <- read.csv(file_path, header=TRUE, sep=",", quote="\"", dec=".", fill=TRUE, comment.char="")
+        if(any(c( "target") %in% features$f)) {
+          features <- features[features$f != "target",]
         }
-      }
-      combined_df <- Reduce(function(x, y) merge(x, y, by = "sub", all = TRUE), dfs)
-      # Create the 'all' dataframe
-      dfs$all <- remove_duplicate_signfeat(combined_df)
-      outputDir_md <- paste(outputDir, "/signficant_features_results/", outcome, sep = '')
-      save_dataframes(dfs, outputDir_md, name)
+        if(any(c( "iter") %in% features$f)) {
+          features <- features[features$f != "iter",]
+        }
+        if(any(c("CS", "S", "target") %in% features$f)) {
+          print(sprintf("target is present in %s", file_path))
+        } else {
+          features <- features[order(-features$count), ]
+
+          features <- features[!grepl("diagnostic", features$f) & features$f != "eccentricity", ]
+          if (nrow(features) > nrow(df) / 10) {
+            features <- features[1:(nrow(df) %/% 10), ]
+          }
+
+          # get the max iter value
+          iter_file <- Sys.glob(paste(outputDir,"feature_selection_results/",outcome, name, "*.rds", sep = "/"))
+          iter <- readRDS(iter_file)
+          threshold <- freq*iter
+
+          # Filter features based on frequency
+          features <- features[features$count > threshold, ]
+          valid_features <- features$f
+          valid_counts <- features$count
+
+          # Check if there are any features left after filtering
+          if (length(valid_features) > 0) {
+            # Create a temporary dataframe with the filtered features
+            temp_df <- df[, c(paste(name,valid_features,sep="_"), 'sub')]
+
+            # Rename the columns by appending the counts
+            colnames(temp_df)[colnames(temp_df) != 'sub'] <- paste(name,valid_features, valid_counts, sep = "_")
+
+            # Store the new dataframe in dfs
+            dfs[[method]] <- temp_df
+          } else {
+            dfs[[method]] <- data.frame(sub = df$sub)  # Assuming 'sub' is a required column
+          }
+        }
+        }
+        combined_df <- Reduce(function(x, y) merge(x, y, by = "sub", all = TRUE), dfs)
+        # Create the 'all' dataframe
+        dfs$all <- remove_duplicate_signfeat(combined_df)
+
+        save_dataframes(dfs, outputDir_md, name)
+
     }
     }
 

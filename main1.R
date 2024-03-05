@@ -2,7 +2,7 @@
 
 library(predictR)
 outputDir <- '/home/pgsalome/R/toolbx/organized_folders/NTCP_TCP/output_NEW'
-features_folder <- '/home/pgsalome/R/toolbx/organized_folders/NTCP_TCP/clidmeraddos_features/ricci-dose/lem1'
+features_folder <- '/home/pgsalome/R/toolbx/organized_folders/NTCP_TCP/clidmeraddos_features/ricci-images4'
 outcomecsv <- paste('/home/pgsalome/R/toolbx/organized_folders/ricci_outcomes.csv',sep='')
 # datacsv <- "/home/pgsalome/R/toolbx/organized_folders/NTCP_TCP/clidmeraddos_features/ricci/features_cli_ohe.csv"
 # fsSurv(datacsv,outcomecsv,"os",outputDir,100)
@@ -16,12 +16,13 @@ feature_files <- list.files(features_folder, pattern = "features_.*\\.csv$", ful
 
 # Main loop
 for (file in feature_files) {
+  print(file)
   parts <- unlist(strsplit(get_mdroiname(file), "_"))
   mod <- parts[1]
   roi <- parts[2]
 
   for (outcometype in outcome_types) {
-    outputDir_md <- paste(outputDir, "/feature_selection_results2/", outcometype, "/", mod, "_", roi, sep = '')
+    outputDir_md <- paste(outputDir, "/feature_selection_results/", outcometype, "/", mod, "_", roi, sep = '')
 
     # Create output directory if it doesn't exist
     if (!dir.exists(outputDir_md)) {

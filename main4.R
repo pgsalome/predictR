@@ -16,11 +16,13 @@ feature_files <- list.files(features_folder, pattern = "features_.*\\.csv$", ful
 
 # Main loop
 for (file in feature_files) {
+  print(file)
   parts <- unlist(strsplit(get_mdroiname(file), "_"))
   mod <- parts[1]
   roi <- parts[2]
 
   for (outcometype in outcome_types) {
+    print(outcometype)
     outputDir_md <- paste(outputDir, "/feature_selection_results2/", outcometype, "/", mod, "_", roi, sep = '')
 
     # Create output directory if it doesn't exist

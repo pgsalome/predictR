@@ -26,8 +26,8 @@ load_data <- function(datacsv, scaledf=FALSE, corrm=TRUE, appendname=FALSE) {
 
 
   # Store and remove patient IDs
-  subs <- Data$sub
-  Data$sub <- NULL
+  subs <- Data[,1]  # Extracts the first column
+  Data <- Data[,-1]  # Removes the first column from Data
 
   name_to_append <- get_mdroiname(datacsv)
   name_split <- strsplit(name_to_append, "_")[[1]]

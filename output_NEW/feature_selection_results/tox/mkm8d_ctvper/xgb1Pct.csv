@@ -1,0 +1,12 @@
+f,count
+wavelet.LLH_glcm_Imc1,23
+wavelet.LLH_glcm_JointAverage,3
+original_shape_Sphericity,144
+wavelet.HHH_glcm_Imc1,70
+log.sigma.2.0.mm.3D_glcm_ClusterShade,4
+log.sigma.4.0.mm.3D_glcm_Idn,1
+log.sigma.2.0.mm.3D_firstorder_Mean,1
+wavelet.LLH_glrlm_ShortRunLowGrayLevelEmphasis,2
+original_shape_SurfaceVolumeRatio,1
+wavelet.HHH_firstorder_Mean,1
+iter,250

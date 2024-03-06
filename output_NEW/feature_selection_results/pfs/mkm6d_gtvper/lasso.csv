@@ -1,0 +1,9 @@
+f,count
+wavelet.HLL_glcm_ClusterShade,108
+gradient_firstorder_Minimum,48
+original_firstorder_Maximum,2
+wavelet.HHL_glcm_Imc1,4
+lbp.3D.k_glszm_SizeZoneNonUniformityNormalized,5
+lbp.3D.k_glcm_Correlation,4
+wavelet.LLH_firstorder_Kurtosis,1
+iter,250

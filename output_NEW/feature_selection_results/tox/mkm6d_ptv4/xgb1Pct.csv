@@ -1,0 +1,11 @@
+f,count
+logarithm_glcm_Correlation,5
+gradient_glcm_Correlation,98
+wavelet.HHL_glcm_Imc2,134
+log.sigma.4.0.mm.3D_glcm_Imc1,4
+wavelet.HLL_glcm_Imc1,4
+wavelet.LLH_glcm_Imc2,2
+wavelet.HLL_firstorder_Skewness,1
+wavelet.LHH_gldm_LargeDependenceHighGrayLevelEmphasis,1
+lbp.3D.m1_glrlm_LongRunHighGrayLevelEmphasis,1
+iter,250

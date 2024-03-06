@@ -1,0 +1,12 @@
+f,count
+gradient_firstorder_Minimum,222
+wavelet.LHL_firstorder_Kurtosis,13
+wavelet.LHH_glszm_SmallAreaEmphasis,1
+logarithm_gldm_DependenceVariance,2
+wavelet.LHL_glcm_Idmn,4
+logarithm_gldm_DependenceNonUniformityNormalized,1
+lbp.3D.m1_glcm_MaximumProbability,4
+lbp.3D.k_firstorder_Minimum,1
+lbp.3D.k_glszm_LowGrayLevelZoneEmphasis,1
+lbp.3D.k_glcm_ClusterShade,1
+iter,250

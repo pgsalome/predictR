@@ -1,0 +1,13 @@
+"f","count"
+"wavelet.HLH_glszm_LowGrayLevelZoneEmphasis",114
+"wavelet.HLL_glcm_SumSquares",24
+"lbp.3D.k_glcm_ClusterShade",6
+"gradient_glcm_Idmn",4
+"wavelet.HLH_glcm_InverseVariance",14
+"gradient_glcm_Imc1",12
+"lbp.3D.m2_glszm_LargeAreaLowGrayLevelEmphasis",23
+"wavelet.LLH_gldm_DependenceVariance",17
+"wavelet.HHH_glszm_SizeZoneNonUniformityNormalized",9
+"lbp.3D.m2_firstorder_Maximum",2
+"logarithm_firstorder_Minimum",5
+"logarithm_glcm_Imc1",3

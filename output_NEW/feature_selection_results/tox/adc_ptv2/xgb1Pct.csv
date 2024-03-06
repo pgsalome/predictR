@@ -1,0 +1,15 @@
+"f","count"
+"lbp.3D.k_glszm_ZoneEntropy",15
+"wavelet.HLH_glrlm_GrayLevelNonUniformity",7
+"gradient_firstorder_MeanAbsoluteDeviation",2
+"wavelet.HLL_firstorder_Mean",1
+"log.sigma.3.0.mm.3D_glrlm_LongRunLowGrayLevelEmphasis",4
+"log.sigma.1.0.mm.3D_glcm_DifferenceVariance",1
+"lbp.3D.k_glrlm_LongRunLowGrayLevelEmphasis",1
+"log.sigma.3.0.mm.3D_glszm_GrayLevelNonUniformityNormalized",2
+"log.sigma.3.0.mm.3D_glszm_LowGrayLevelZoneEmphasis",1
+"wavelet.HHH_firstorder_Median",1
+"wavelet.HLL_glcm_ClusterShade",1
+"wavelet.HLL_firstorder_Maximum",1
+"original_firstorder_Median",1
+"lbp.3D.k_firstorder_Minimum",1

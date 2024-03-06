@@ -1,0 +1,11 @@
+f,count
+lbp.3D.m1_glszm_LargeAreaLowGrayLevelEmphasis,3
+original_glcm_ClusterTendency,2
+wavelet.HHH_glcm_Imc1,3
+logarithm_glcm_Idn,2
+log.sigma.3.0.mm.3D_gldm_LargeDependenceLowGrayLevelEmphasis,1
+wavelet.HLH_firstorder_Kurtosis,1
+log.sigma.2.0.mm.3D_glcm_Idn,1
+log.sigma.2.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,1
+wavelet.LLL_glszm_LargeAreaHighGrayLevelEmphasis,1
+iter,250

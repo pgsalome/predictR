@@ -1,0 +1,14 @@
+"f","count"
+"wavelet.HHL_glcm_ClusterTendency",39
+"lbp.3D.m2_glcm_ClusterShade",43
+"wavelet.HHH_glcm_Correlation",15
+"wavelet.HHH_firstorder_Median",63
+"wavelet.LHH_firstorder_Skewness",10
+"log.sigma.2.0.mm.3D_gldm_DependenceNonUniformity",1
+"wavelet.LHL_firstorder_Median",3
+"wavelet.LLL_firstorder_Median",18
+"log.sigma.2.0.mm.3D_firstorder_Mean",3
+"wavelet.HHL_glcm_ClusterShade",2
+"wavelet.LHL_glcm_Correlation",8
+"wavelet.LHL_firstorder_Maximum",1
+"log.sigma.2.0.mm.3D_glcm_ClusterShade",1

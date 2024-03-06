@@ -1,0 +1,12 @@
+f,count
+log.sigma.4.0.mm.3D_gldm_LargeDependenceLowGrayLevelEmphasis,41
+log.sigma.4.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,78
+log.sigma.4.0.mm.3D_glcm_Idn,16
+wavelet.HHH_firstorder_Median,7
+wavelet.HHL_glcm_Imc1,4
+wavelet.HHH_glcm_Imc1,6
+wavelet.HHL_glcm_ClusterShade,1
+wavelet.LHL_firstorder_90Percentile,1
+original_shape_Sphericity,1
+lbp.3D.m1_firstorder_90Percentile,1
+iter,250

@@ -1,0 +1,8 @@
+"f","count"
+"lbp.3D.k_glrlm_LowGrayLevelRunEmphasis",10
+"wavelet.LHH_gldm_DependenceNonUniformity",6
+"log.sigma.3.0.mm.3D_glszm_GrayLevelVariance",1
+"gradient_glszm_GrayLevelVariance",1
+"original_firstorder_Median",2
+"wavelet.HLL_glcm_ClusterShade",1
+"gradient_firstorder_MeanAbsoluteDeviation",1

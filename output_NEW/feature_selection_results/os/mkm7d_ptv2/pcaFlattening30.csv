@@ -1,0 +1,8 @@
+f,count
+original_shape_Elongation,44
+original_shape_Flatness,32
+lbp.3D.k_glszm_GrayLevelVariance,3
+wavelet.HHH_firstorder_Skewness,1
+logarithm_gldm_LargeDependenceLowGrayLevelEmphasis,1
+lbp.3D.k_firstorder_10Percentile,1
+iter,250

@@ -1,0 +1,14 @@
+f,count
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,201
+wavelet.HHL_firstorder_Median,33
+log.sigma.4.0.mm.3D_glcm_Idn,3
+wavelet.HHH_glcm_Imc1,15
+wavelet.HLH_firstorder_Mean,1
+logarithm_firstorder_RootMeanSquared,2
+lbp.3D.m2_glszm_LargeAreaHighGrayLevelEmphasis,1
+wavelet.HHH_firstorder_Median,3
+lbp.3D.m1_firstorder_90Percentile,2
+wavelet.HHL_glcm_Imc1,5
+log.sigma.4.0.mm.3D_glcm_ClusterProminence,1
+wavelet.HHL_glcm_ClusterShade,1
+iter,250

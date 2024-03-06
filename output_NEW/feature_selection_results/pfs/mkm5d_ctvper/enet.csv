@@ -1,0 +1,8 @@
+f,count
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,145
+wavelet.HHL_firstorder_Median,31
+wavelet.HHH_glcm_Imc1,8
+wavelet.HHL_glcm_Imc1,3
+log.sigma.4.0.mm.3D_glcm_Idn,3
+wavelet.LLH_glcm_Idmn,1
+iter,250

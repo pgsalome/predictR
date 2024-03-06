@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.LLL_glszm_ZoneEntropy",49
+"log.sigma.1.0.mm.3D_glszm_SizeZoneNonUniformity",7
+"logarithm_glcm_ClusterTendency",6
+"wavelet.LLL_gldm_DependenceEntropy",5
+"log.sigma.1.0.mm.3D_firstorder_Kurtosis",1
+"original_shape_MajorAxisLength",2
+"log.sigma.2.0.mm.3D_gldm_DependenceEntropy",1
+"logarithm_glszm_SmallAreaEmphasis",1
+"lbp.3D.m1_glcm_ClusterShade",1
+"gradient_gldm_LargeDependenceHighGrayLevelEmphasis",1
+"lbp.3D.k_glcm_SumSquares",1

@@ -1,0 +1,11 @@
+f,count
+original_shape_MajorAxisLength,22
+wavelet.HHH_glcm_Imc1,77
+original_shape_Sphericity,77
+wavelet.LLH_glcm_Imc2,31
+wavelet.LLH_gldm_SmallDependenceLowGrayLevelEmphasis,18
+original_glcm_Correlation,1
+wavelet.LLH_glcm_JointAverage,16
+lbp.3D.k_glcm_Idmn,7
+original_shape_SurfaceVolumeRatio,1
+iter,250

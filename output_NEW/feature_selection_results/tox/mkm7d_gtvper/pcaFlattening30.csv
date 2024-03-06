@@ -1,0 +1,6 @@
+f,count
+lbp.3D.m1_glcm_ClusterShade,17
+lbp.3D.k_firstorder_Range,15
+lbp.3D.k_glcm_ClusterProminence,6
+wavelet.HLL_firstorder_Mean,1
+iter,250

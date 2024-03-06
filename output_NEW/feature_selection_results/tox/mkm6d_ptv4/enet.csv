@@ -1,0 +1,13 @@
+f,count
+wavelet.LHL_glcm_DifferenceVariance,113
+wavelet.LLH_firstorder_Mean,12
+log.sigma.4.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,1
+wavelet.HLL_firstorder_Mean,6
+wavelet.HLL_glcm_Imc1,1
+wavelet.HHH_glcm_ClusterProminence,5
+wavelet.LLH_gldm_DependenceVariance,5
+wavelet.LHL_glrlm_LongRunLowGrayLevelEmphasis,2
+wavelet.HHH_glcm_ClusterShade,2
+lbp.3D.m2_firstorder_90Percentile,1
+gradient_glcm_Idmn,2
+iter,250

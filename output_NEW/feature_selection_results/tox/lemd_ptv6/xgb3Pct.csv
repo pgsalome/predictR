@@ -1,0 +1,10 @@
+"f","count"
+"wavelet.LLH_glcm_Imc2",2
+"wavelet.HLL_glszm_LargeAreaLowGrayLevelEmphasis",1
+"wavelet.LHL_firstorder_Energy",1
+"wavelet.HHH_firstorder_Skewness",1
+"lbp.3D.k_gldm_LargeDependenceHighGrayLevelEmphasis",1
+"lbp.3D.m1_firstorder_Mean",1
+"wavelet.LHL_glcm_Imc2",1
+"wavelet.HHL_glcm_Imc1",1
+"wavelet.HLL_gldm_DependenceVariance",1

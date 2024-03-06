@@ -1,0 +1,11 @@
+f,count
+original_shape_Sphericity,25
+logarithm_gldm_LargeDependenceLowGrayLevelEmphasis,17
+wavelet.HHL_firstorder_Median,1
+lbp.3D.m2_glszm_LargeAreaEmphasis,4
+wavelet.LHH_firstorder_Mean,4
+lbp.3D.k_glszm_LowGrayLevelZoneEmphasis,2
+wavelet.HHH_firstorder_Median,1
+wavelet.HHH_firstorder_Mean,1
+wavelet.HLH_glcm_ClusterProminence,1
+iter,250

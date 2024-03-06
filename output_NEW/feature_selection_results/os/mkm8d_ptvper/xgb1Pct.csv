@@ -1,0 +1,6 @@
+f,count
+logarithm_firstorder_RootMeanSquared,220
+wavelet.HHL_glcm_Imc1,25
+lbp.3D.k_glcm_Correlation,4
+wavelet.HLH_glcm_Imc1,1
+iter,250

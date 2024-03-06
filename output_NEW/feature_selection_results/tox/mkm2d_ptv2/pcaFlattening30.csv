@@ -1,0 +1,12 @@
+f,count
+lbp.3D.k_glcm_ClusterShade,34
+original_shape_Elongation,73
+original_shape_Flatness,69
+wavelet.HHL_firstorder_Median,12
+lbp.3D.k_gldm_SmallDependenceLowGrayLevelEmphasis,7
+wavelet.HHH_firstorder_Median,9
+wavelet.HHH_glcm_ClusterShade,9
+wavelet.HHL_glcm_ClusterProminence,1
+wavelet.HHH_firstorder_Skewness,1
+logarithm_gldm_LargeDependenceLowGrayLevelEmphasis,1
+iter,250

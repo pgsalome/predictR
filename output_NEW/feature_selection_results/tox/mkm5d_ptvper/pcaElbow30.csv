@@ -1,0 +1,16 @@
+f,count
+wavelet.LLL_glszm_LargeAreaLowGrayLevelEmphasis,41
+wavelet.HLH_glcm_ClusterProminence,1
+wavelet.HHH_glcm_ClusterShade,38
+wavelet.HHH_firstorder_Median,14
+original_gldm_LargeDependenceLowGrayLevelEmphasis,18
+wavelet.LHH_firstorder_Skewness,1
+wavelet.LHH_firstorder_Mean,7
+wavelet.HHL_glszm_LargeAreaLowGrayLevelEmphasis,1
+original_shape_Flatness,3
+original_shape_SurfaceVolumeRatio,2
+wavelet.HHH_firstorder_Skewness,1
+wavelet.HHL_glcm_Correlation,1
+wavelet.LLH_glszm_LargeAreaLowGrayLevelEmphasis,2
+wavelet.HHL_glcm_ClusterShade,1
+iter,250

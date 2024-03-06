@@ -1,0 +1,17 @@
+"f","count"
+"wavelet.HLH_firstorder_Median",1
+"wavelet.HLH_firstorder_Kurtosis",2
+"wavelet.LHL_firstorder_Skewness",4
+"wavelet.HHL_firstorder_Median",8
+"wavelet.HHH_glcm_ClusterShade",47
+"log.sigma.2.0.mm.3D_glcm_Imc2",1
+"wavelet.HHH_firstorder_Skewness",1
+"wavelet.LHH_glcm_ClusterShade",3
+"original_shape_Flatness",1
+"lbp.3D.k_glcm_ClusterProminence",3
+"lbp.3D.m2_firstorder_Maximum",2
+"wavelet.LHH_firstorder_Skewness",1
+"wavelet.HHH_firstorder_TotalEnergy",1
+"original_shape_SurfaceVolumeRatio",3
+"lbp.3D.k_firstorder_Kurtosis",1
+"wavelet.LLH_firstorder_Kurtosis",1

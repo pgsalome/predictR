@@ -1,0 +1,11 @@
+"f","count"
+"logarithm_firstorder_10Percentile",207
+"log.sigma.3.0.mm.3D_firstorder_Median",8
+"lbp.3D.k_glszm_SmallAreaEmphasis",18
+"log.sigma.4.0.mm.3D_firstorder_90Percentile",7
+"lbp.3D.k_glszm_SmallAreaLowGrayLevelEmphasis",3
+"log.sigma.3.0.mm.3D_glszm_GrayLevelNonUniformityNormalized",1
+"log.sigma.3.0.mm.3D_glcm_Imc2",1
+"wavelet.HLL_glcm_Correlation",2
+"logarithm_glrlm_GrayLevelNonUniformity",1
+"wavelet.HLH_gldm_DependenceNonUniformity",2

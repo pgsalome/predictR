@@ -1,0 +1,14 @@
+f,count
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,49
+wavelet.HHL_glcm_Imc1,19
+log.sigma.4.0.mm.3D_glcm_Idn,63
+wavelet.HHH_glcm_Imc1,13
+wavelet.HHH_firstorder_Median,8
+logarithm_firstorder_Median,5
+log.sigma.2.0.mm.3D_firstorder_90Percentile,1
+lbp.3D.m1_firstorder_RootMeanSquared,1
+wavelet.HHL_glcm_ClusterShade,1
+lbp.3D.m2_firstorder_Median,1
+lbp.3D.m2_glcm_MaximumProbability,1
+wavelet.LHL_firstorder_90Percentile,1
+iter,250

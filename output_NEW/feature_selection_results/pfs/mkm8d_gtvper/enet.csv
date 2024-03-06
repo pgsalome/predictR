@@ -1,0 +1,11 @@
+f,count
+wavelet.HLL_glcm_ClusterProminence,112
+gradient_firstorder_Minimum,119
+original_firstorder_Maximum,3
+wavelet.HHL_firstorder_Skewness,2
+lbp.3D.k_glcm_Correlation,2
+wavelet.HHH_glcm_Imc1,2
+wavelet.HHL_glcm_Imc1,3
+wavelet.LLH_glcm_Idmn,1
+wavelet.LLH_firstorder_RobustMeanAbsoluteDeviation,1
+iter,250

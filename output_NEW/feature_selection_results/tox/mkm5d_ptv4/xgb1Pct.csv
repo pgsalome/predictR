@@ -1,0 +1,10 @@
+f,count
+wavelet.LLL_glszm_SmallAreaLowGrayLevelEmphasis,88
+gradient_glcm_Correlation,35
+gradient_firstorder_Minimum,3
+wavelet.HHL_glcm_Imc1,119
+wavelet.LLH_glcm_Imc2,2
+lbp.3D.m1_glrlm_LongRunHighGrayLevelEmphasis,1
+wavelet.HHH_glszm_LargeAreaHighGrayLevelEmphasis,1
+wavelet.HLL_glcm_Imc1,1
+iter,250

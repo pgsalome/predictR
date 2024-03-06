@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.HLH_gldm_LargeDependenceLowGrayLevelEmphasis",103
+"logarithm_glszm_LargeAreaLowGrayLevelEmphasis",16
+"original_shape_Sphericity",1
+"wavelet.LLH_glcm_Correlation",2
+"wavelet.HHH_firstorder_Mean",3
+"wavelet.HHH_glcm_ClusterShade",3
+"lbp.3D.m1_glcm_ClusterShade",3
+"lbp.3D.k_firstorder_10Percentile",2
+"wavelet.LLH_glcm_Idmn",1
+"logarithm_firstorder_Skewness",1
+"wavelet.LLL_glcm_Correlation",1

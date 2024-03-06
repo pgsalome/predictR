@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.LHH_firstorder_Mean",5
+"wavelet.LHL_glszm_SmallAreaLowGrayLevelEmphasis",2
+"wavelet.HHH_glcm_ClusterShade",1
+"wavelet.HHH_firstorder_Median",5
+"wavelet.HLH_firstorder_Mean",1
+"wavelet.HHH_glrlm_LowGrayLevelRunEmphasis",1
+"lbp.3D.k_gldm_SmallDependenceLowGrayLevelEmphasis",8
+"wavelet.HLH_glrlm_ShortRunLowGrayLevelEmphasis",1
+"wavelet.LHH_firstorder_Median",1
+"wavelet.LHH_firstorder_Skewness",1
+"wavelet.HLL_glcm_InverseVariance",2

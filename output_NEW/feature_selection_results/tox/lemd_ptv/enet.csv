@@ -1,0 +1,14 @@
+"f","count"
+"wavelet.LHL_glcm_ClusterShade",107
+"log.sigma.2.0.mm.3D_glcm_Imc1",1
+"log.sigma.4.0.mm.3D_gldm_LargeDependenceLowGrayLevelEmphasis",32
+"gradient_glcm_Imc1",5
+"lbp.3D.m1_glszm_LargeAreaLowGrayLevelEmphasis",1
+"logarithm_firstorder_Minimum",9
+"wavelet.HLL_glcm_ClusterProminence",1
+"wavelet.LHL_gldm_SmallDependenceHighGrayLevelEmphasis",12
+"wavelet.HLH_glszm_SmallAreaLowGrayLevelEmphasis",3
+"wavelet.LLH_glcm_Imc2",2
+"wavelet.LHH_glszm_SizeZoneNonUniformityNormalized",1
+"lbp.3D.k_firstorder_10Percentile",1
+"original_firstorder_90Percentile",1

@@ -1,0 +1,16 @@
+f,count
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,103
+wavelet.LHL_glcm_DifferenceVariance,7
+wavelet.HLL_firstorder_Median,7
+gradient_glcm_Imc1,9
+logarithm_firstorder_Minimum,6
+logarithm_glcm_Imc1,6
+logarithm_glszm_GrayLevelNonUniformityNormalized,1
+wavelet.LHH_gldm_DependenceNonUniformityNormalized,1
+gradient_glcm_Correlation,3
+wavelet.HLL_firstorder_10Percentile,3
+wavelet.HLL_glcm_DifferenceVariance,1
+lbp.3D.m1_glcm_ClusterShade,1
+original_firstorder_Median,2
+logarithm_glcm_JointEnergy,1
+iter,250

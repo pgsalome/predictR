@@ -1,0 +1,11 @@
+f,count
+original_shape_Sphericity,75
+wavelet.HHH_glcm_Imc1,67
+wavelet.LLH_glrlm_ShortRunLowGrayLevelEmphasis,61
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,5
+original_shape_MajorAxisLength,21
+wavelet.LLH_glcm_Imc1,12
+wavelet.LHH_glcm_Correlation,7
+original_glcm_Correlation,1
+logarithm_gldm_GrayLevelNonUniformity,1
+iter,250

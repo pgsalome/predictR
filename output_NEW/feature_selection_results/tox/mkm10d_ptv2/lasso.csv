@@ -1,0 +1,17 @@
+f,count
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,113
+wavelet.LLH_firstorder_Mean,46
+wavelet.LLH_glrlm_LongRunLowGrayLevelEmphasis,53
+wavelet.HLH_firstorder_Median,175
+wavelet.LHL_firstorder_Variance,97
+wavelet.LLH_firstorder_Median,3
+wavelet.HLL_firstorder_Median,45
+wavelet.HLH_glrlm_LowGrayLevelRunEmphasis,67
+wavelet.LLH_gldm_DependenceVariance,20
+lbp.3D.m2_firstorder_Maximum,10
+logarithm_glcm_Imc1,9
+logarithm_glcm_Correlation,3
+wavelet.LHH_firstorder_InterquartileRange,1
+wavelet.HHH_firstorder_Mean,2
+wavelet.LLL_firstorder_10Percentile,3
+iter,250

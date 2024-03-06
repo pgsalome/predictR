@@ -1,0 +1,5 @@
+f,count
+wavelet.HHH_glcm_ClusterShade,5
+wavelet.LHH_glszm_LargeAreaHighGrayLevelEmphasis,1
+wavelet.HLH_glcm_ClusterProminence,1
+iter,250

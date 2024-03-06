@@ -1,0 +1,12 @@
+f,count
+wavelet.LHH_firstorder_Mean,3
+lbp.3D.k_gldm_LargeDependenceHighGrayLevelEmphasis,3
+original_shape_Sphericity,13
+wavelet.HHL_glszm_LargeAreaLowGrayLevelEmphasis,7
+wavelet.HHH_gldm_DependenceNonUniformityNormalized,4
+wavelet.HHH_firstorder_Median,5
+wavelet.HHH_gldm_DependenceVariance,1
+original_shape_Flatness,1
+wavelet.HHH_glcm_ClusterShade,4
+wavelet.HHH_firstorder_Kurtosis,1
+iter,250

@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.LHH_glszm_SizeZoneNonUniformityNormalized",10
+"wavelet.LLL_firstorder_90Percentile",7
+"wavelet.LHH_glszm_SmallAreaHighGrayLevelEmphasis",1
+"wavelet.HLH_glszm_SmallAreaLowGrayLevelEmphasis",1
+"original_glszm_LargeAreaLowGrayLevelEmphasis",2
+"wavelet.LHH_glszm_SmallAreaEmphasis",2
+"wavelet.LHL_glszm_SmallAreaEmphasis",2
+"wavelet.HLH_glszm_GrayLevelNonUniformityNormalized",1
+"wavelet.HLH_glszm_GrayLevelVariance",1
+"wavelet.HLL_glcm_Id",2
+"wavelet.LLL_firstorder_Uniformity",1

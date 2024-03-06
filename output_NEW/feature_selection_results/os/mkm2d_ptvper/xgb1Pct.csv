@@ -1,0 +1,11 @@
+f,count
+logarithm_firstorder_Median,216
+wavelet.HLL_glcm_JointEnergy,1
+wavelet.HHL_glcm_Imc1,13
+log.sigma.2.0.mm.3D_glcm_Correlation,5
+gradient_glcm_Imc2,4
+lbp.3D.k_glcm_Correlation,7
+original_firstorder_10Percentile,2
+log.sigma.4.0.mm.3D_glcm_MaximumProbability,1
+wavelet.LHH_firstorder_Skewness,1
+iter,250

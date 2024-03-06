@@ -1,0 +1,10 @@
+"f","count"
+"original_glszm_SmallAreaLowGrayLevelEmphasis",7
+"wavelet.HLL_glcm_ClusterShade",6
+"wavelet.HHL_glcm_Imc1",5
+"lbp.3D.m1_firstorder_90Percentile",4
+"lbp.3D.m2_glszm_LargeAreaLowGrayLevelEmphasis",7
+"lbp.3D.k_glszm_GrayLevelNonUniformity",7
+"lbp.3D.m2_firstorder_10Percentile",2
+"wavelet.LLH_firstorder_TotalEnergy",1
+"log.sigma.2.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis",3

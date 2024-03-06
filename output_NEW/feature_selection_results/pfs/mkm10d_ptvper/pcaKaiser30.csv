@@ -1,0 +1,9 @@
+f,count
+original_shape_Flatness,2
+wavelet.LHL_glszm_LargeAreaHighGrayLevelEmphasis,2
+wavelet.HHH_firstorder_Median,3
+wavelet.HHH_firstorder_Skewness,1
+lbp.3D.k_gldm_SmallDependenceLowGrayLevelEmphasis,1
+original_gldm_LargeDependenceLowGrayLevelEmphasis,1
+wavelet.LLL_gldm_LargeDependenceLowGrayLevelEmphasis,3
+iter,250

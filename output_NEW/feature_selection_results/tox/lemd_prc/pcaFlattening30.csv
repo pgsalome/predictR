@@ -1,0 +1,8 @@
+"f","count"
+"wavelet.HHH_glcm_ClusterShade",10
+"wavelet.HHH_firstorder_Kurtosis",3
+"wavelet.HHH_gldm_LargeDependenceHighGrayLevelEmphasis",2
+"wavelet.HHL_glcm_ClusterShade",3
+"wavelet.LHH_glcm_ClusterProminence",1
+"wavelet.HHH_firstorder_Mean",2
+"wavelet.LLH_firstorder_90Percentile",1

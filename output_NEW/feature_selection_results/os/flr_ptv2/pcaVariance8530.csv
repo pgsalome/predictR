@@ -1,0 +1,10 @@
+"f","count"
+"original_shape_Flatness",19
+"original_shape_Elongation",8
+"wavelet.LHH_firstorder_Mean",9
+"wavelet.HHL_glszm_SmallAreaLowGrayLevelEmphasis",1
+"wavelet.HHH_glcm_ClusterShade",1
+"wavelet.HHL_firstorder_Median",3
+"wavelet.LLH_firstorder_RootMeanSquared",1
+"wavelet.HHH_firstorder_Mean",1
+"wavelet.HHH_gldm_LowGrayLevelEmphasis",1

@@ -1,0 +1,10 @@
+f,count
+original_shape_Sphericity,118
+wavelet.HHH_glcm_Imc1,85
+wavelet.LLH_glcm_Imc1,20
+log.sigma.4.0.mm.3D_glszm_LargeAreaLowGrayLevelEmphasis,21
+log.sigma.2.0.mm.3D_glcm_ClusterShade,2
+wavelet.HHH_glszm_GrayLevelNonUniformity,2
+wavelet.LLH_glrlm_LongRunLowGrayLevelEmphasis,1
+wavelet.LHH_glcm_Imc2,1
+iter,250

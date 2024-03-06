@@ -1,0 +1,8 @@
+f,count
+original_shape_Maximum2DDiameterSlice,233
+wavelet.LHH_glszm_SmallAreaEmphasis,13
+original_shape_Maximum2DDiameterColumn,1
+wavelet.HHH_gldm_SmallDependenceLowGrayLevelEmphasis,1
+log.sigma.4.0.mm.3D_glcm_Contrast,1
+wavelet.HHH_glcm_Imc1,1
+iter,250

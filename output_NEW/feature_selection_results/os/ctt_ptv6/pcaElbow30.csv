@@ -1,0 +1,15 @@
+"f","count"
+"wavelet.LLL_firstorder_90Percentile",2
+"wavelet.LLL_firstorder_Uniformity",7
+"original_glrlm_RunPercentage",6
+"wavelet.LHL_glszm_SmallAreaEmphasis",3
+"wavelet.LHH_glszm_LowGrayLevelZoneEmphasis",5
+"wavelet.LLH_glcm_DifferenceEntropy",1
+"wavelet.HLH_glszm_LowGrayLevelZoneEmphasis",1
+"wavelet.LHH_glszm_SmallAreaHighGrayLevelEmphasis",7
+"original_glszm_ZoneVariance",1
+"wavelet.HLH_glszm_SizeZoneNonUniformityNormalized",1
+"original_glrlm_RunVariance",2
+"wavelet.HHH_firstorder_RobustMeanAbsoluteDeviation",4
+"wavelet.LHH_glcm_JointEntropy",1
+"wavelet.HLL_firstorder_InterquartileRange",1

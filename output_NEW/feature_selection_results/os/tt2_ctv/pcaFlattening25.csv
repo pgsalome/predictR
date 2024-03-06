@@ -1,0 +1,9 @@
+"f","count"
+"wavelet.HLL_firstorder_Kurtosis",1
+"wavelet.HHH_glcm_Correlation",10
+"wavelet.LHL_glcm_InverseVariance",6
+"wavelet.HHH_glrlm_LongRunHighGrayLevelEmphasis",4
+"wavelet.HHH_firstorder_Median",3
+"wavelet.HHH_gldm_DependenceNonUniformity",1
+"lbp.3D.k_glcm_ClusterProminence",1
+"lbp.3D.k_glszm_GrayLevelVariance",1

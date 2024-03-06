@@ -1,0 +1,13 @@
+f,count
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,117
+logarithm_firstorder_Minimum,2
+logarithm_glcm_Imc1,5
+gradient_glcm_Imc1,14
+wavelet.LHL_glcm_DifferenceVariance,6
+wavelet.HLL_firstorder_Median,3
+wavelet.HLL_firstorder_10Percentile,3
+original_firstorder_Median,1
+logarithm_glcm_JointEnergy,1
+gradient_glcm_Correlation,2
+logarithm_glszm_GrayLevelNonUniformityNormalized,1
+iter,250

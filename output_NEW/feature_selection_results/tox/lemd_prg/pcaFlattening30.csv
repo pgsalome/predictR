@@ -1,0 +1,13 @@
+"f","count"
+"log.sigma.2.0.mm.3D_glcm_ClusterShade",8
+"original_shape_Flatness",16
+"wavelet.HHL_firstorder_Skewness",2
+"original_shape_Elongation",6
+"logarithm_firstorder_RootMeanSquared",2
+"wavelet.HLL_glszm_LargeAreaEmphasis",5
+"wavelet.HHH_glcm_ClusterShade",1
+"wavelet.HHH_glszm_SmallAreaEmphasis",5
+"wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis",1
+"wavelet.HHL_firstorder_Mean",1
+"wavelet.HHL_glcm_ClusterShade",2
+"lbp.3D.m2_glcm_Imc2",1

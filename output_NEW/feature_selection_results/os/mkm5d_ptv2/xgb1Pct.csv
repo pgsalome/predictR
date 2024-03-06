@@ -1,0 +1,9 @@
+f,count
+logarithm_firstorder_Median,105
+original_firstorder_10Percentile,131
+wavelet.HLH_firstorder_Skewness,2
+original_gldm_SmallDependenceLowGrayLevelEmphasis,6
+lbp.3D.k_firstorder_10Percentile,1
+wavelet.HHL_glcm_Imc1,4
+gradient_glcm_Imc2,1
+iter,250

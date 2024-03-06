@@ -1,0 +1,10 @@
+"f","count"
+"wavelet.HLH_firstorder_Skewness",19
+"original_shape_Elongation",5
+"original_glrlm_ShortRunLowGrayLevelEmphasis",1
+"wavelet.HHH_glszm_SmallAreaLowGrayLevelEmphasis",2
+"logarithm_glszm_LargeAreaLowGrayLevelEmphasis",1
+"wavelet.HLL_glszm_SmallAreaHighGrayLevelEmphasis",1
+"wavelet.LLH_glcm_JointAverage",1
+"original_shape_Flatness",2
+"wavelet.LLH_glrlm_LowGrayLevelRunEmphasis",1

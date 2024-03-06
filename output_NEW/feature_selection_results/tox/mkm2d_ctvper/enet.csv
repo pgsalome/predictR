@@ -1,0 +1,7 @@
+f,count
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,103
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,9
+lbp.3D.k_glcm_ClusterProminence,1
+log.sigma.2.0.mm.3D_glcm_Idmn,2
+logarithm_glcm_Imc2,3
+iter,250

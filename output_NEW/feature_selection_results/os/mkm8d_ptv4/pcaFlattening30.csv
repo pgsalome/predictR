@@ -1,0 +1,9 @@
+f,count
+wavelet.HHH_glcm_ClusterShade,30
+wavelet.LHH_firstorder_Skewness,21
+original_shape_Sphericity,11
+original_glszm_LargeAreaLowGrayLevelEmphasis,10
+original_shape_Flatness,12
+original_shape_Elongation,2
+logarithm_glszm_LargeAreaLowGrayLevelEmphasis,1
+iter,250

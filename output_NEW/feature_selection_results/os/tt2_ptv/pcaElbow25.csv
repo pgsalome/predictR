@@ -1,0 +1,6 @@
+"f","count"
+"wavelet.HHL_glrlm_ShortRunLowGrayLevelEmphasis",2
+"wavelet.LHL_glszm_SmallAreaHighGrayLevelEmphasis",1
+"wavelet.HLL_firstorder_Mean",3
+"lbp.3D.k_firstorder_Minimum",1
+"lbp.3D.k_gldm_LargeDependenceHighGrayLevelEmphasis",1

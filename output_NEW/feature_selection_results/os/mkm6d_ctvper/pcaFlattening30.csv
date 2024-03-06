@@ -1,0 +1,14 @@
+f,count
+lbp.3D.k_gldm_SmallDependenceLowGrayLevelEmphasis,22
+wavelet.HHH_glcm_ClusterShade,111
+original_glszm_LargeAreaLowGrayLevelEmphasis,3
+wavelet.HHH_firstorder_Skewness,13
+lbp.3D.k_firstorder_Minimum,4
+wavelet.HHH_firstorder_Mean,11
+wavelet.LHH_glcm_ClusterShade,6
+wavelet.HHL_firstorder_Skewness,1
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,3
+wavelet.HHL_glcm_ClusterShade,3
+wavelet.HHH_firstorder_Median,5
+wavelet.LHL_glcm_ClusterShade,1
+iter,250

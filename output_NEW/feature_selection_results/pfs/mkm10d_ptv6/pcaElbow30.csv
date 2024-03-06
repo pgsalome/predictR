@@ -1,0 +1,9 @@
+f,count
+lbp.3D.k_glrlm_LowGrayLevelRunEmphasis,17
+lbp.3D.k_gldm_LargeDependenceHighGrayLevelEmphasis,34
+wavelet.LLL_gldm_LargeDependenceLowGrayLevelEmphasis,26
+logarithm_glrlm_LongRunLowGrayLevelEmphasis,12
+wavelet.HHH_firstorder_Median,6
+original_shape_Sphericity,7
+wavelet.HHH_glcm_ClusterShade,2
+iter,250

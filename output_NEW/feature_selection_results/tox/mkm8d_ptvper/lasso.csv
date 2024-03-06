@@ -1,0 +1,13 @@
+f,count
+wavelet.LHL_glcm_ClusterProminence,112
+wavelet.HLL_glcm_Idmn,35
+log.sigma.4.0.mm.3D_glcm_Idn,5
+wavelet.HLL_firstorder_90Percentile,4
+wavelet.HHH_glcm_Correlation,5
+gradient_glcm_Correlation,3
+wavelet.HLL_glcm_ClusterShade,3
+wavelet.LLH_firstorder_InterquartileRange,1
+wavelet.HLH_glcm_Correlation,1
+wavelet.LHL_glrlm_ShortRunLowGrayLevelEmphasis,1
+gradient_glcm_Idmn,1
+iter,250

@@ -1,0 +1,10 @@
+f,count
+lbp.3D.k_firstorder_Range,12
+wavelet.HHL_glcm_ClusterShade,14
+original_shape_Elongation,5
+wavelet.HHH_glszm_LargeAreaLowGrayLevelEmphasis,15
+wavelet.HHH_firstorder_Skewness,1
+wavelet.HHH_glcm_ClusterShade,1
+lbp.3D.k_glcm_ClusterShade,2
+lbp.3D.m1_glcm_ClusterShade,2
+iter,250

@@ -1,0 +1,8 @@
+f,count
+wavelet.HHL_glcm_Imc1,224
+wavelet.HHH_glcm_Imc1,7
+wavelet.LHL_firstorder_Skewness,12
+log.sigma.4.0.mm.3D_glcm_Imc2,2
+log.sigma.2.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,4
+wavelet.HHH_firstorder_Skewness,1
+iter,250

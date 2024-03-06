@@ -1,0 +1,16 @@
+"f","count"
+"wavelet.LLL_firstorder_10Percentile",75
+"wavelet.HHL_glcm_Idmn",58
+"original_shape_Sphericity",31
+"wavelet.LLH_firstorder_Median",40
+"lbp.3D.k_glcm_ClusterShade",8
+"lbp.3D.m1_firstorder_Skewness",1
+"wavelet.LHH_firstorder_Skewness",1
+"wavelet.LHL_gldm_DependenceVariance",4
+"wavelet.LHL_firstorder_90Percentile",1
+"logarithm_glcm_InverseVariance",1
+"wavelet.HHL_glcm_Correlation",1
+"wavelet.LHL_gldm_DependenceEntropy",1
+"wavelet.HLH_glrlm_LongRunHighGrayLevelEmphasis",1
+"wavelet.HHH_gldm_LargeDependenceHighGrayLevelEmphasis",1
+"lbp.3D.m1_glszm_SizeZoneNonUniformityNormalized",1

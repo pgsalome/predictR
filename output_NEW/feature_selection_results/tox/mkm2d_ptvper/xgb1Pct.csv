@@ -1,0 +1,6 @@
+f,count
+wavelet.HHL_glcm_Imc1,245
+wavelet.HHL_glcm_ClusterProminence,1
+wavelet.HLL_firstorder_Mean,3
+wavelet.HHH_glcm_Imc1,1
+iter,250

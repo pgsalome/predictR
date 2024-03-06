@@ -1,0 +1,9 @@
+f,count
+wavelet.LHL_glcm_DifferenceVariance,111
+wavelet.LLH_firstorder_Mean,9
+wavelet.HLL_firstorder_Mean,4
+wavelet.HHH_glcm_ClusterProminence,5
+wavelet.LLH_gldm_DependenceVariance,4
+gradient_glcm_Idmn,2
+wavelet.LHL_glrlm_LongRunLowGrayLevelEmphasis,1
+iter,250

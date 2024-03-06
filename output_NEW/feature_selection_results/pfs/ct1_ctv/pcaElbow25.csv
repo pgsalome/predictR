@@ -1,0 +1,14 @@
+"f","count"
+"log.sigma.3.0.mm.3D_glcm_JointAverage",33
+"logarithm_firstorder_Kurtosis",7
+"wavelet.HHL_firstorder_Mean",28
+"log.sigma.3.0.mm.3D_glcm_Imc2",7
+"logarithm_glszm_ZoneEntropy",5
+"original_shape_Flatness",2
+"original_shape_Sphericity",1
+"wavelet.HLL_glszm_LowGrayLevelZoneEmphasis",3
+"wavelet.HLH_firstorder_Median",1
+"wavelet.LHH_firstorder_Mean",1
+"original_glszm_SmallAreaLowGrayLevelEmphasis",3
+"wavelet.HLL_glrlm_ShortRunHighGrayLevelEmphasis",1
+"logarithm_glcm_JointEntropy",1

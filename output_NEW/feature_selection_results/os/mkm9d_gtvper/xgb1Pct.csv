@@ -1,0 +1,5 @@
+f,count
+wavelet.LLL_firstorder_10Percentile,244
+lbp.3D.m1_firstorder_Skewness,4
+log.sigma.3.0.mm.3D_glcm_DifferenceEntropy,2
+iter,250

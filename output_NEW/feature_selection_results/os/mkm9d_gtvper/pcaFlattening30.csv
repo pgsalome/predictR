@@ -1,0 +1,5 @@
+f,count
+lbp.3D.k_firstorder_Range,14
+wavelet.HHH_glszm_LargeAreaLowGrayLevelEmphasis,25
+lbp.3D.k_glcm_ClusterProminence,6
+iter,250

@@ -1,0 +1,17 @@
+f,count
+wavelet.LHL_glcm_DifferenceVariance,120
+lbp.3D.m2_gldm_SmallDependenceHighGrayLevelEmphasis,1
+wavelet.LLH_firstorder_Mean,12
+wavelet.HLL_firstorder_Mean,7
+gradient_glcm_Idmn,3
+lbp.3D.m1_firstorder_Median,2
+lbp.3D.m2_firstorder_90Percentile,2
+wavelet.LLH_gldm_DependenceVariance,7
+wavelet.HHL_firstorder_Median,3
+gradient_gldm_LargeDependenceHighGrayLevelEmphasis,3
+lbp.3D.m2_gldm_HighGrayLevelEmphasis,2
+wavelet.HHH_glcm_ClusterProminence,5
+wavelet.LHH_gldm_DependenceNonUniformityNormalized,2
+wavelet.LLH_firstorder_Median,2
+wavelet.HLH_glrlm_LongRunLowGrayLevelEmphasis,1
+iter,250

@@ -1,0 +1,14 @@
+f,count
+wavelet.HLH_glrlm_LongRunLowGrayLevelEmphasis,100
+logarithm_glcm_Imc1,19
+original_glszm_LowGrayLevelZoneEmphasis,4
+wavelet.HHH_glcm_ClusterShade,4
+logarithm_firstorder_Uniformity,10
+lbp.3D.m2_firstorder_Maximum,13
+wavelet.HLL_glcm_SumSquares,4
+gradient_glcm_Idmn,10
+gradient_glcm_Imc1,3
+wavelet.LLL_firstorder_10Percentile,4
+wavelet.HHH_firstorder_Mean,1
+original_glcm_Correlation,1
+iter,250

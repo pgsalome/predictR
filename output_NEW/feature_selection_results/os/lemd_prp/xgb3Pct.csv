@@ -1,0 +1,13 @@
+"f","count"
+"wavelet.HHL_glcm_Imc1",7
+"logarithm_firstorder_Maximum",7
+"gradient_gldm_DependenceVariance",3
+"wavelet.HLH_glcm_Imc1",7
+"wavelet.LHH_glcm_ClusterShade",2
+"wavelet.LLH_firstorder_10Percentile",2
+"log.sigma.4.0.mm.3D_firstorder_Minimum",1
+"wavelet.LHH_glrlm_HighGrayLevelRunEmphasis",2
+"lbp.3D.k_glcm_InverseVariance",1
+"original_firstorder_10Percentile",1
+"log.sigma.3.0.mm.3D_glcm_MaximumProbability",1
+"wavelet.LLH_firstorder_TotalEnergy",1

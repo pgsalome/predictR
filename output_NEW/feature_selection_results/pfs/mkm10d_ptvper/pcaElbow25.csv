@@ -1,0 +1,9 @@
+f,count
+original_shape_SurfaceVolumeRatio,1
+logarithm_firstorder_RootMeanSquared,1
+original_gldm_LargeDependenceLowGrayLevelEmphasis,3
+wavelet.LLL_glrlm_LongRunLowGrayLevelEmphasis,2
+wavelet.LLL_gldm_LargeDependenceLowGrayLevelEmphasis,3
+wavelet.HHH_firstorder_Median,1
+wavelet.HHH_firstorder_Mean,1
+iter,250

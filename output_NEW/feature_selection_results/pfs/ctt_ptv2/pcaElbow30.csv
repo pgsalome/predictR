@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.HLL_glcm_Id",30
+"original_shape_Elongation",8
+"wavelet.LHH_glszm_SmallAreaLowGrayLevelEmphasis",9
+"original_glcm_SumEntropy",4
+"wavelet.HLH_glszm_SmallAreaLowGrayLevelEmphasis",2
+"wavelet.HLL_glszm_SmallAreaEmphasis",4
+"original_shape_Flatness",3
+"wavelet.LLH_glrlm_RunVariance",1
+"log.sigma.4.0.mm.3D_glszm_SmallAreaLowGrayLevelEmphasis",2
+"wavelet.LHL_glcm_ClusterProminence",1
+"wavelet.LLL_firstorder_90Percentile",1

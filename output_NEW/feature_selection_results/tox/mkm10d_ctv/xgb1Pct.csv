@@ -1,0 +1,11 @@
+f,count
+wavelet.HLH_gldm_DependenceNonUniformity,192
+wavelet.LHH_firstorder_Skewness,13
+lbp.3D.k_firstorder_Maximum,20
+original_shape_MajorAxisLength,5
+wavelet.LHL_firstorder_Median,5
+lbp.3D.k_gldm_DependenceEntropy,1
+gradient_firstorder_Minimum,10
+wavelet.LLL_glcm_Imc1,3
+logarithm_glszm_LargeAreaHighGrayLevelEmphasis,1
+iter,250

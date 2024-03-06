@@ -1,0 +1,9 @@
+f,count
+logarithm_glrlm_LongRunLowGrayLevelEmphasis,9
+wavelet.HHH_glcm_ClusterShade,2
+wavelet.HHH_gldm_DependenceVariance,3
+original_shape_Sphericity,4
+wavelet.HHH_gldm_DependenceNonUniformityNormalized,2
+wavelet.HLH_firstorder_Mean,1
+wavelet.LHH_firstorder_Mean,1
+iter,250

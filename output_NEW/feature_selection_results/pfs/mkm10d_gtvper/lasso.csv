@@ -1,0 +1,12 @@
+f,count
+wavelet.HLL_glcm_ClusterProminence,109
+gradient_firstorder_Minimum,66
+wavelet.LLH_firstorder_Kurtosis,1
+lbp.3D.m1_glszm_ZoneEntropy,3
+wavelet.LLH_firstorder_RobustMeanAbsoluteDeviation,1
+wavelet.LHL_glszm_SmallAreaHighGrayLevelEmphasis,1
+wavelet.HHH_glcm_Imc1,2
+wavelet.HHL_glcm_Imc1,4
+wavelet.HHL_firstorder_Skewness,1
+wavelet.HHL_glcm_ClusterShade,1
+iter,250

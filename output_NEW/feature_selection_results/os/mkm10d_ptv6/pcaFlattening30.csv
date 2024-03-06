@@ -1,0 +1,6 @@
+f,count
+original_shape_Sphericity,3
+wavelet.LLL_gldm_LargeDependenceLowGrayLevelEmphasis,11
+logarithm_glrlm_LongRunLowGrayLevelEmphasis,3
+lbp.3D.k_gldm_LargeDependenceHighGrayLevelEmphasis,1
+iter,250

@@ -1,0 +1,7 @@
+f,count
+wavelet.LLL_gldm_SmallDependenceHighGrayLevelEmphasis,223
+wavelet.LLL_firstorder_10Percentile,6
+wavelet.HHL_glcm_Imc1,17
+wavelet.LHL_firstorder_TotalEnergy,1
+wavelet.LLL_gldm_LargeDependenceHighGrayLevelEmphasis,3
+iter,250

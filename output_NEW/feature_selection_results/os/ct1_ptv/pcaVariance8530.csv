@@ -1,0 +1,13 @@
+"f","count"
+"wavelet.HHL_glrlm_RunEntropy",8
+"lbp.3D.k_glszm_GrayLevelNonUniformityNormalized",4
+"lbp.3D.k_glszm_LargeAreaHighGrayLevelEmphasis",13
+"wavelet.HHH_firstorder_Mean",6
+"wavelet.HLH_firstorder_Median",16
+"wavelet.HHL_firstorder_Median",7
+"wavelet.HHH_gldm_LowGrayLevelEmphasis",1
+"wavelet.HHH_firstorder_Median",3
+"wavelet.LHH_firstorder_Median",5
+"wavelet.LLH_glrlm_ShortRunHighGrayLevelEmphasis",1
+"lbp.3D.k_glcm_InverseVariance",1
+"original_shape_Sphericity",1

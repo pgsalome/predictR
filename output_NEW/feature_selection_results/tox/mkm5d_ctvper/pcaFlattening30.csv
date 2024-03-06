@@ -1,0 +1,14 @@
+f,count
+wavelet.HHH_glcm_ClusterShade,126
+lbp.3D.k_gldm_SmallDependenceLowGrayLevelEmphasis,78
+wavelet.HHH_firstorder_Mean,14
+wavelet.HHH_firstorder_Skewness,19
+wavelet.HHH_firstorder_Median,17
+wavelet.LHH_firstorder_Median,1
+wavelet.LHH_glcm_ClusterShade,2
+log.sigma.4.0.mm.3D_glcm_Correlation,1
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,1
+wavelet.HHL_firstorder_Kurtosis,1
+wavelet.HHL_glcm_ClusterShade,2
+lbp.3D.k_firstorder_Minimum,5
+iter,250

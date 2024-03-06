@@ -1,0 +1,11 @@
+f,count
+logarithm_gldm_LargeDependenceLowGrayLevelEmphasis,10
+wavelet.LHL_firstorder_90Percentile,28
+logarithm_glcm_Imc2,119
+log.sigma.2.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,13
+wavelet.HHH_glcm_ClusterShade,5
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,1
+wavelet.LLH_glcm_Correlation,1
+wavelet.LLH_glcm_InverseVariance,2
+log.sigma.3.0.mm.3D_glcm_Correlation,1
+iter,250

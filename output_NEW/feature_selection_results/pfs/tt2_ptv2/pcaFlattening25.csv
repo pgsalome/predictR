@@ -1,0 +1,10 @@
+"f","count"
+"wavelet.HHH_glrlm_LowGrayLevelRunEmphasis",9
+"wavelet.HHH_firstorder_Median",6
+"wavelet.LHH_glrlm_ShortRunLowGrayLevelEmphasis",3
+"wavelet.LHL_glcm_Correlation",1
+"wavelet.HLH_firstorder_Median",8
+"wavelet.HHH_glszm_SmallAreaHighGrayLevelEmphasis",1
+"wavelet.LHH_gldm_HighGrayLevelEmphasis",1
+"wavelet.HHL_glszm_SmallAreaLowGrayLevelEmphasis",1
+"wavelet.HHL_glcm_ClusterShade",1

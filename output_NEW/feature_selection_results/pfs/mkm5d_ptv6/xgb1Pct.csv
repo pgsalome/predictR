@@ -1,0 +1,10 @@
+f,count
+log.sigma.2.0.mm.3D_glcm_Imc2,226
+original_glcm_Correlation,11
+logarithm_gldm_LargeDependenceHighGrayLevelEmphasis,1
+wavelet.HLH_glcm_Imc2,1
+lbp.3D.k_glszm_ZoneEntropy,5
+wavelet.LHL_firstorder_Skewness,3
+wavelet.HLH_firstorder_Median,2
+gradient_firstorder_Minimum,1
+iter,250

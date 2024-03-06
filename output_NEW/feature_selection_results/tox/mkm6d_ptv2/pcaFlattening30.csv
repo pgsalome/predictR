@@ -1,0 +1,9 @@
+f,count
+original_shape_Elongation,85
+original_shape_Flatness,55
+lbp.3D.k_glcm_Correlation,1
+wavelet.HHH_firstorder_Skewness,1
+wavelet.LHH_gldm_LargeDependenceHighGrayLevelEmphasis,1
+wavelet.HHH_firstorder_Median,2
+wavelet.HHL_firstorder_Median,2
+iter,250

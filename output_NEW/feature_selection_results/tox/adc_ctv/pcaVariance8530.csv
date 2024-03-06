@@ -1,0 +1,11 @@
+"f","count"
+"original_glrlm_LongRunLowGrayLevelEmphasis",3
+"logarithm_glrlm_ShortRunLowGrayLevelEmphasis",8
+"logarithm_gldm_LargeDependenceLowGrayLevelEmphasis",40
+"wavelet.HHH_firstorder_Mean",29
+"wavelet.LHH_firstorder_Mean",7
+"lbp.3D.k_firstorder_10Percentile",1
+"wavelet.HHL_firstorder_Mean",2
+"wavelet.HHH_firstorder_Skewness",1
+"wavelet.HHL_firstorder_Median",1
+"wavelet.LLH_glszm_SmallAreaHighGrayLevelEmphasis",1

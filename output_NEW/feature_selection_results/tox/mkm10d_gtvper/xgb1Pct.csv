@@ -1,0 +1,13 @@
+f,count
+gradient_firstorder_Minimum,77
+log.sigma.4.0.mm.3D_glcm_Idm,100
+wavelet.LLL_gldm_LargeDependenceLowGrayLevelEmphasis,6
+logarithm_gldm_GrayLevelNonUniformity,20
+lbp.3D.k_glszm_SizeZoneNonUniformityNormalized,32
+wavelet.HHL_firstorder_Skewness,3
+wavelet.LLL_glcm_Idn,2
+wavelet.LHL_glcm_Idmn,4
+original_shape_SurfaceArea,1
+logarithm_glszm_LowGrayLevelZoneEmphasis,3
+wavelet.HHH_glcm_Imc1,2
+iter,250

@@ -1,0 +1,13 @@
+"f","count"
+"wavelet.HLH_gldm_HighGrayLevelEmphasis",37
+"logarithm_gldm_LargeDependenceLowGrayLevelEmphasis",2
+"wavelet.HHL_firstorder_Median",1
+"original_shape_Flatness",1
+"original_shape_Elongation",10
+"lbp.3D.k_firstorder_10Percentile",2
+"wavelet.HLH_glcm_ClusterShade",4
+"wavelet.HLL_glcm_JointAverage",1
+"wavelet.LHH_firstorder_Median",1
+"wavelet.HHH_glcm_Autocorrelation",2
+"wavelet.HHH_glcm_ClusterShade",2
+"original_shape_Sphericity",1

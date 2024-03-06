@@ -1,0 +1,13 @@
+f,count
+original_shape_Flatness,21
+wavelet.LHH_firstorder_Skewness,47
+original_shape_Sphericity,5
+wavelet.HHH_glcm_ClusterShade,38
+wavelet.LHH_firstorder_Median,6
+lbp.3D.k_gldm_LargeDependenceHighGrayLevelEmphasis,1
+wavelet.HHL_firstorder_Median,9
+wavelet.HHH_firstorder_Median,3
+lbp.3D.k_glszm_LowGrayLevelZoneEmphasis,2
+wavelet.HHH_firstorder_Mean,5
+wavelet.HLH_firstorder_Mean,2
+iter,250

@@ -1,0 +1,7 @@
+"f","count"
+"wavelet.HLH_glszm_SmallAreaLowGrayLevelEmphasis",135
+"logarithm_gldm_LargeDependenceLowGrayLevelEmphasis",42
+"logarithm_glszm_LowGrayLevelZoneEmphasis",11
+"wavelet.LLL_glcm_Correlation",1
+"logarithm_firstorder_Uniformity",1
+"wavelet.HLL_glcm_ClusterShade",1

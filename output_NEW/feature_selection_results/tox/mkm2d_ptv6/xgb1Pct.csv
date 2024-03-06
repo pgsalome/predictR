@@ -1,0 +1,7 @@
+f,count
+wavelet.HHL_glcm_Imc2,243
+gradient_firstorder_Minimum,2
+wavelet.HHH_glcm_Imc1,2
+wavelet.LLH_glrlm_RunEntropy,1
+wavelet.LLH_glcm_Imc2,2
+iter,250

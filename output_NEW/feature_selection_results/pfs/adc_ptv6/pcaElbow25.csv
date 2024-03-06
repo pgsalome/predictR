@@ -1,0 +1,10 @@
+"f","count"
+"wavelet.LHH_gldm_LowGrayLevelEmphasis",67
+"wavelet.LHH_firstorder_Mean",2
+"wavelet.LHH_glcm_ClusterShade",5
+"log.sigma.2.0.mm.3D_glrlm_LongRunLowGrayLevelEmphasis",4
+"wavelet.HLL_glcm_InverseVariance",1
+"wavelet.LLH_glszm_SmallAreaHighGrayLevelEmphasis",1
+"wavelet.LHL_glszm_SmallAreaHighGrayLevelEmphasis",5
+"wavelet.LHH_glrlm_ShortRunLowGrayLevelEmphasis",3
+"logarithm_firstorder_Variance",1

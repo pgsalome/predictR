@@ -1,0 +1,5 @@
+f,count
+wavelet.LLL_glszm_SmallAreaHighGrayLevelEmphasis,244
+wavelet.LLL_glszm_SmallAreaLowGrayLevelEmphasis,1
+logarithm_firstorder_10Percentile,5
+iter,250

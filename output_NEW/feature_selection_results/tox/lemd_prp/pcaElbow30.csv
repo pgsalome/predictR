@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.HHH_glcm_ClusterShade",4
+"wavelet.LHL_firstorder_Skewness",6
+"wavelet.LHL_glcm_ClusterShade",47
+"gradient_gldm_LargeDependenceLowGrayLevelEmphasis",1
+"wavelet.HHH_firstorder_Median",4
+"lbp.3D.m2_glcm_MaximumProbability",2
+"wavelet.HHL_firstorder_Mean",20
+"original_shape_Flatness",1
+"original_shape_SurfaceVolumeRatio",1
+"wavelet.LHL_firstorder_Kurtosis",3
+"wavelet.HHH_glszm_LargeAreaLowGrayLevelEmphasis",1

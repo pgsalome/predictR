@@ -1,0 +1,12 @@
+f,count
+wavelet.HHH_firstorder_Median,18
+original_shape_Sphericity,15
+original_shape_Flatness,27
+wavelet.HLH_firstorder_Skewness,2
+wavelet.HHH_firstorder_Skewness,8
+lbp.3D.k_glcm_ClusterShade,26
+wavelet.LLL_firstorder_10Percentile,1
+wavelet.HHH_glcm_ClusterShade,1
+wavelet.HHL_firstorder_Median,2
+wavelet.LHH_glcm_ClusterShade,1
+iter,275

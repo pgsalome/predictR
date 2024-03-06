@@ -1,0 +1,13 @@
+f,count
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,115
+logarithm_glcm_Idn,9
+original_firstorder_Minimum,32
+log.sigma.2.0.mm.3D_glcm_Idmn,5
+wavelet.LLH_glcm_Idmn,12
+logarithm_glcm_Imc2,11
+original_firstorder_10Percentile,2
+wavelet.HLL_glszm_GrayLevelVariance,1
+logarithm_glrlm_LongRunLowGrayLevelEmphasis,1
+gradient_glcm_Idn,1
+lbp.3D.m2_firstorder_MeanAbsoluteDeviation,1
+iter,250

@@ -1,0 +1,12 @@
+f,count
+original_firstorder_Minimum,82
+wavelet.HLH_gldm_LargeDependenceLowGrayLevelEmphasis,168
+wavelet.LLH_glcm_Idmn,11
+wavelet.LLH_gldm_LargeDependenceLowGrayLevelEmphasis,21
+logarithm_glcm_Idn,24
+wavelet.LLH_glcm_MaximumProbability,5
+wavelet.HLL_glszm_GrayLevelVariance,14
+lbp.3D.m2_gldm_LargeDependenceLowGrayLevelEmphasis,5
+logarithm_glrlm_LongRunLowGrayLevelEmphasis,1
+gradient_glcm_Idn,1
+iter,250

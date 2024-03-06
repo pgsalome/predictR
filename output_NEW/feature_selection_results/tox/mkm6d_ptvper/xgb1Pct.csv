@@ -1,0 +1,5 @@
+f,count
+log.sigma.2.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,2
+wavelet.HHL_glcm_Imc1,247
+lbp.3D.k_glcm_Correlation,1
+iter,250

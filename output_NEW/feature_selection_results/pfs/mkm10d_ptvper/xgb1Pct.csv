@@ -1,0 +1,5 @@
+f,count
+gradient_firstorder_Skewness,1
+wavelet.HHL_glcm_Imc1,2
+logarithm_firstorder_RootMeanSquared,1
+iter,250

@@ -1,0 +1,9 @@
+f,count
+logarithm_glcm_Correlation,1
+wavelet.HHL_glcm_Imc1,25
+logarithm_firstorder_RootMeanSquared,166
+log.sigma.3.0.mm.3D_glcm_MaximumProbability,20
+lbp.3D.k_glcm_Correlation,24
+original_firstorder_10Percentile,13
+wavelet.LHH_glcm_Imc1,1
+iter,250

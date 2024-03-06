@@ -1,0 +1,10 @@
+f,count
+wavelet.HHL_glcm_Imc1,124
+logarithm_firstorder_RootMeanSquared,103
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,3
+lbp.3D.k_glcm_Imc2,1
+original_firstorder_10Percentile,14
+wavelet.HLL_glcm_MaximumProbability,3
+wavelet.HLL_firstorder_Skewness,1
+wavelet.HHH_glcm_Imc1,1
+iter,250

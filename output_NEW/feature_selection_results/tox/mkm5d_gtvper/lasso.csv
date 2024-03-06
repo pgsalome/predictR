@@ -1,0 +1,15 @@
+f,count
+logarithm_glszm_LargeAreaLowGrayLevelEmphasis,18
+wavelet.HLL_glcm_ClusterShade,83
+wavelet.HLH_glrlm_ShortRunLowGrayLevelEmphasis,43
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,23
+logarithm_glrlm_GrayLevelNonUniformityNormalized,3
+gradient_glcm_Idn,4
+original_shape_Elongation,2
+wavelet.LHH_glcm_MaximumProbability,2
+wavelet.LLL_firstorder_10Percentile,1
+wavelet.LLH_glcm_Idmn,2
+original_glcm_Imc2,1
+logarithm_glcm_Imc1,1
+lbp.3D.m2_glcm_ClusterShade,1
+iter,250

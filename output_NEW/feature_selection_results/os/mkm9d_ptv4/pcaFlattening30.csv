@@ -1,0 +1,9 @@
+f,count
+original_shape_Flatness,22
+wavelet.HHH_glcm_ClusterShade,27
+original_shape_Elongation,10
+wavelet.LHH_firstorder_Skewness,28
+original_shape_Sphericity,2
+wavelet.HHH_firstorder_Mean,1
+wavelet.HLL_firstorder_Skewness,2
+iter,250

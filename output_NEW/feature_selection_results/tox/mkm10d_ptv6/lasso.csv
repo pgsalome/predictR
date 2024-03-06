@@ -1,0 +1,11 @@
+f,count
+wavelet.LHL_glcm_ClusterShade,119
+wavelet.LLH_glcm_InverseVariance,19
+wavelet.HLH_glszm_LowGrayLevelZoneEmphasis,8
+wavelet.LLH_glrlm_LongRunLowGrayLevelEmphasis,2
+wavelet.HLH_glcm_Idmn,1
+wavelet.HHH_glcm_ClusterShade,2
+lbp.3D.k_glszm_SizeZoneNonUniformityNormalized,2
+wavelet.LLH_firstorder_Mean,3
+wavelet.HLL_gldm_SmallDependenceLowGrayLevelEmphasis,1
+iter,250

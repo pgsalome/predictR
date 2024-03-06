@@ -1,0 +1,8 @@
+f,count
+original_gldm_LargeDependenceLowGrayLevelEmphasis,12
+wavelet.LLL_gldm_LargeDependenceLowGrayLevelEmphasis,9
+wavelet.HHH_firstorder_Skewness,1
+original_shape_SurfaceVolumeRatio,3
+wavelet.HHH_glcm_ClusterShade,2
+wavelet.HHH_firstorder_Mean,1
+iter,250

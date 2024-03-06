@@ -1,0 +1,16 @@
+"f","count"
+"wavelet.LLH_glcm_ClusterShade",78
+"lbp.3D.m2_firstorder_Maximum",16
+"wavelet.HLH_firstorder_Median",17
+"wavelet.HHH_glcm_ClusterShade",11
+"wavelet.HLH_firstorder_Mean",11
+"original_shape_Flatness",15
+"wavelet.HHL_firstorder_Median",18
+"wavelet.HHH_firstorder_Mean",3
+"original_shape_Elongation",8
+"wavelet.HHH_firstorder_Median",3
+"wavelet.LHH_firstorder_Median",3
+"wavelet.HHH_gldm_LowGrayLevelEmphasis",1
+"wavelet.HHL_glszm_SmallAreaLowGrayLevelEmphasis",1
+"wavelet.LLH_firstorder_Skewness",2
+"wavelet.LHH_firstorder_Mean",2

@@ -1,0 +1,9 @@
+f,count
+original_firstorder_10Percentile,122
+wavelet.HHH_firstorder_Median,28
+logarithm_firstorder_RootMeanSquared,92
+wavelet.HLL_glcm_MaximumProbability,3
+gradient_glszm_SmallAreaEmphasis,1
+log.sigma.4.0.mm.3D_glrlm_ShortRunLowGrayLevelEmphasis,3
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,1
+iter,250

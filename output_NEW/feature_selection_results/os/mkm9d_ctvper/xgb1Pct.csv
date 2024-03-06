@@ -1,0 +1,15 @@
+f,count
+wavelet.HHL_glcm_Imc1,100
+logarithm_firstorder_RootMeanSquared,86
+lbp.3D.m1_glcm_MaximumProbability,28
+log.sigma.4.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,2
+original_firstorder_10Percentile,14
+wavelet.HHH_firstorder_Median,3
+wavelet.HLH_glrlm_RunLengthNonUniformityNormalized,1
+gradient_firstorder_10Percentile,4
+wavelet.HLH_glcm_Imc1,4
+log.sigma.4.0.mm.3D_gldm_LargeDependenceLowGrayLevelEmphasis,3
+wavelet.HLL_firstorder_Skewness,2
+wavelet.LHL_firstorder_TotalEnergy,1
+lbp.3D.k_glcm_Imc2,2
+iter,250

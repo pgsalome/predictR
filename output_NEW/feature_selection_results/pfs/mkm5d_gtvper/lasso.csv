@@ -1,0 +1,11 @@
+f,count
+original_firstorder_Maximum,5
+wavelet.HLH_glszm_ZoneVariance,1
+wavelet.HLL_glcm_ClusterShade,98
+gradient_firstorder_Minimum,9
+wavelet.LLH_glcm_Idmn,3
+wavelet.LLH_glrlm_ShortRunLowGrayLevelEmphasis,4
+lbp.3D.k_firstorder_Range,1
+wavelet.LLH_firstorder_RobustMeanAbsoluteDeviation,1
+wavelet.HHL_glcm_Imc1,3
+iter,250

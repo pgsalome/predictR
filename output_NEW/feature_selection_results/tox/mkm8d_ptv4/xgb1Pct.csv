@@ -1,0 +1,14 @@
+f,count
+wavelet.HHL_glcm_Imc2,217
+gradient_glcm_Correlation,10
+wavelet.LLH_glcm_Imc2,6
+logarithm_glcm_Correlation,5
+logarithm_glcm_Imc2,1
+wavelet.HHL_glszm_SmallAreaEmphasis,1
+lbp.3D.m1_glrlm_LongRunHighGrayLevelEmphasis,3
+wavelet.HLL_glcm_Imc1,1
+log.sigma.4.0.mm.3D_glcm_Imc1,3
+original_shape_Sphericity,1
+wavelet.LHH_firstorder_Median,1
+wavelet.LLH_glszm_LargeAreaHighGrayLevelEmphasis,1
+iter,250

@@ -1,0 +1,17 @@
+"f","count"
+"gradient_glszm_ZoneEntropy",55
+"wavelet.LHL_firstorder_Kurtosis",91
+"lbp.3D.m2_firstorder_Maximum",12
+"log.sigma.2.0.mm.3D_glrlm_LongRunLowGrayLevelEmphasis",46
+"original_shape_Sphericity",20
+"original_shape_MajorAxisLength",5
+"wavelet.LHL_glrlm_LongRunHighGrayLevelEmphasis",5
+"log.sigma.3.0.mm.3D_firstorder_Skewness",1
+"wavelet.HHH_glszm_SmallAreaEmphasis",1
+"logarithm_glszm_GrayLevelNonUniformity",2
+"original_gldm_SmallDependenceHighGrayLevelEmphasis",1
+"wavelet.LHL_glszm_LargeAreaLowGrayLevelEmphasis",3
+"lbp.3D.k_gldm_LargeDependenceLowGrayLevelEmphasis",3
+"lbp.3D.k_firstorder_Kurtosis",2
+"wavelet.LHH_glszm_SizeZoneNonUniformity",2
+"wavelet.LLH_glcm_InverseVariance",1

@@ -1,0 +1,8 @@
+"f","count"
+"original_glszm_LargeAreaLowGrayLevelEmphasis",13
+"wavelet.LHL_glszm_SmallAreaEmphasis",7
+"wavelet.LHH_glszm_SizeZoneNonUniformityNormalized",12
+"wavelet.LLL_firstorder_90Percentile",7
+"wavelet.LLL_firstorder_Uniformity",1
+"wavelet.HLH_glszm_GrayLevelNonUniformityNormalized",2
+"wavelet.LHH_glszm_SmallAreaEmphasis",1

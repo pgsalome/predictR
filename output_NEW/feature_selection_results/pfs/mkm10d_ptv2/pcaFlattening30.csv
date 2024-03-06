@@ -1,0 +1,9 @@
+f,count
+wavelet.HHH_firstorder_Skewness,21
+original_shape_Elongation,23
+original_shape_Flatness,25
+lbp.3D.k_glcm_ClusterShade,27
+wavelet.HHH_glcm_ClusterShade,1
+wavelet.HLL_glszm_LargeAreaHighGrayLevelEmphasis,1
+wavelet.HHH_firstorder_Median,1
+iter,250

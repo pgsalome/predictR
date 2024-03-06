@@ -1,0 +1,15 @@
+f,count
+wavelet.HHL_glszm_GrayLevelNonUniformity,214
+log.sigma.3.0.mm.3D_glcm_DifferenceEntropy,5
+logarithm_glszm_LargeAreaHighGrayLevelEmphasis,13
+lbp.3D.k_gldm_SmallDependenceEmphasis,2
+wavelet.LLL_gldm_LargeDependenceHighGrayLevelEmphasis,1
+wavelet.HHH_glcm_Imc1,5
+wavelet.HHL_glszm_LargeAreaHighGrayLevelEmphasis,2
+lbp.3D.m2_glcm_Imc2,1
+wavelet.HHL_firstorder_Skewness,2
+wavelet.HHH_gldm_LargeDependenceHighGrayLevelEmphasis,1
+log.sigma.4.0.mm.3D_firstorder_Kurtosis,2
+lbp.3D.m2_firstorder_Uniformity,1
+wavelet.HHH_gldm_SmallDependenceLowGrayLevelEmphasis,1
+iter,250

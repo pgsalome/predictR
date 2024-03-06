@@ -1,0 +1,14 @@
+"f","count"
+"wavelet.HLL_firstorder_InterquartileRange",99
+"gradient_firstorder_InterquartileRange",11
+"wavelet.HHL_firstorder_Skewness",2
+"wavelet.HLL_glcm_Idn",7
+"wavelet.HLH_firstorder_Mean",3
+"wavelet.HLL_glcm_ClusterShade",7
+"wavelet.HLH_glcm_ClusterShade",17
+"wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis",8
+"wavelet.HLH_gldm_LargeDependenceLowGrayLevelEmphasis",12
+"wavelet.HHH_firstorder_Median",1
+"wavelet.HHL_glcm_Idn",3
+"wavelet.HLH_firstorder_Kurtosis",1
+"wavelet.HLH_firstorder_Median",1

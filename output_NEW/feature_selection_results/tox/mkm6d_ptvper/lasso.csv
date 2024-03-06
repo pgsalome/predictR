@@ -1,0 +1,11 @@
+f,count
+wavelet.LHL_glcm_ClusterProminence,96
+wavelet.LLH_glszm_LargeAreaLowGrayLevelEmphasis,10
+wavelet.HLL_glcm_Idmn,15
+wavelet.HHH_glcm_Correlation,8
+wavelet.LLL_glcm_Idmn,9
+wavelet.LHL_glrlm_ShortRunLowGrayLevelEmphasis,12
+wavelet.HLL_glcm_ClusterShade,2
+wavelet.HLH_firstorder_Skewness,3
+wavelet.HLL_firstorder_90Percentile,1
+iter,250

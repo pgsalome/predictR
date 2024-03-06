@@ -1,0 +1,16 @@
+f,count
+wavelet.LHL_glrlm_ShortRunLowGrayLevelEmphasis,22
+wavelet.LHL_glcm_ClusterProminence,106
+wavelet.HLL_glcm_Idmn,30
+wavelet.HLL_glcm_ClusterShade,4
+wavelet.LLL_glcm_Idmn,13
+wavelet.LLH_gldm_LargeDependenceLowGrayLevelEmphasis,6
+wavelet.HHH_glcm_Correlation,6
+gradient_glcm_Correlation,2
+original_firstorder_10Percentile,1
+gradient_glcm_Idmn,2
+wavelet.HLH_glcm_ClusterShade,2
+wavelet.HLH_glcm_Correlation,1
+wavelet.HLL_firstorder_90Percentile,2
+wavelet.HLH_firstorder_Skewness,1
+iter,250

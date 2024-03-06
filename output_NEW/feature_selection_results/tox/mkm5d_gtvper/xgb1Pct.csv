@@ -1,0 +1,13 @@
+f,count
+original_shape_Maximum2DDiameterSlice,174
+log.sigma.4.0.mm.3D_glcm_Idm,49
+wavelet.LHH_glszm_SmallAreaEmphasis,2
+wavelet.LLL_glrlm_GrayLevelNonUniformity,8
+wavelet.HHL_firstorder_Skewness,4
+wavelet.LLL_glszm_LargeAreaHighGrayLevelEmphasis,1
+wavelet.HLH_gldm_DependenceNonUniformity,6
+wavelet.HHH_glcm_Imc1,2
+logarithm_glszm_LargeAreaHighGrayLevelEmphasis,2
+lbp.3D.m2_gldm_LargeDependenceLowGrayLevelEmphasis,1
+log.sigma.2.0.mm.3D_glcm_JointEnergy,1
+iter,250

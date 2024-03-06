@@ -1,0 +1,16 @@
+f,count
+log.sigma.3.0.mm.3D_glcm_Imc1,199
+wavelet.HHL_glcm_Imc1,14
+wavelet.LLH_glcm_Idmn,2
+wavelet.LLL_glrlm_ShortRunLowGrayLevelEmphasis,5
+log.sigma.4.0.mm.3D_gldm_DependenceVariance,8
+gradient_firstorder_Minimum,7
+wavelet.HLH_glcm_MaximumProbability,1
+wavelet.HHH_glcm_Imc2,2
+lbp.3D.m2_firstorder_Uniformity,2
+log.sigma.2.0.mm.3D_glcm_ClusterShade,1
+original_shape_MajorAxisLength,5
+original_gldm_LargeDependenceHighGrayLevelEmphasis,2
+wavelet.LHH_glcm_Correlation,1
+wavelet.HHH_firstorder_Skewness,1
+iter,250

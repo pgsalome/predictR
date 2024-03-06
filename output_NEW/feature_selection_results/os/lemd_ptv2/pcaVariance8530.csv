@@ -1,0 +1,16 @@
+"f","count"
+"wavelet.LHL_glcm_ClusterShade",10
+"wavelet.HHH_firstorder_Kurtosis",33
+"wavelet.LHH_glcm_ClusterShade",86
+"original_shape_Elongation",50
+"wavelet.HHH_glszm_LargeAreaHighGrayLevelEmphasis",4
+"wavelet.LLL_glszm_LargeAreaEmphasis",18
+"original_gldm_LargeDependenceLowGrayLevelEmphasis",9
+"wavelet.HLH_glcm_ClusterShade",2
+"wavelet.HLH_glcm_Correlation",2
+"wavelet.HHH_gldm_LargeDependenceHighGrayLevelEmphasis",3
+"wavelet.HHL_firstorder_Median",2
+"wavelet.HHH_firstorder_Median",1
+"wavelet.HLH_firstorder_Mean",1
+"wavelet.LHH_firstorder_Skewness",3
+"wavelet.HHL_firstorder_Skewness",1

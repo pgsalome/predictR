@@ -1,0 +1,12 @@
+f,count
+original_shape_Flatness,23
+original_shape_Sphericity,3
+wavelet.LHH_firstorder_Median,1
+wavelet.HHH_firstorder_Mean,15
+wavelet.HHH_glcm_ClusterShade,26
+wavelet.HHH_firstorder_Kurtosis,1
+original_shape_Elongation,5
+logarithm_glszm_LargeAreaLowGrayLevelEmphasis,1
+wavelet.HLH_firstorder_Median,2
+wavelet.HHL_glszm_LargeAreaLowGrayLevelEmphasis,1
+iter,250

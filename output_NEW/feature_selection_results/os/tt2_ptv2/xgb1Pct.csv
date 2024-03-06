@@ -1,0 +1,13 @@
+"f","count"
+"log.sigma.2.0.mm.3D_glszm_ZoneEntropy",229
+"log.sigma.3.0.mm.3D_glszm_SmallAreaEmphasis",1
+"log.sigma.2.0.mm.3D_glszm_SmallAreaEmphasis",4
+"log.sigma.1.0.mm.3D_glcm_Correlation",3
+"wavelet.HHH_glrlm_GrayLevelNonUniformity",1
+"log.sigma.3.0.mm.3D_firstorder_Minimum",2
+"wavelet.LHH_glrlm_RunLengthNonUniformity",4
+"wavelet.LLL_glszm_SmallAreaLowGrayLevelEmphasis",1
+"wavelet.HHL_firstorder_Mean",1
+"log.sigma.2.0.mm.3D_glcm_InverseVariance",2
+"lbp.3D.k_glcm_ClusterProminence",1
+"log.sigma.3.0.mm.3D_glszm_GrayLevelVariance",1

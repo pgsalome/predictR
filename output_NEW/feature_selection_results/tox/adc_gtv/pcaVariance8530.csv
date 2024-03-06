@@ -1,0 +1,9 @@
+"f","count"
+"wavelet.HHL_firstorder_Mean",2
+"wavelet.HHH_glcm_Autocorrelation",4
+"wavelet.HLH_gldm_HighGrayLevelEmphasis",5
+"wavelet.LHH_firstorder_Median",1
+"wavelet.HHH_firstorder_Mean",1
+"logarithm_gldm_LargeDependenceLowGrayLevelEmphasis",3
+"original_shape_Elongation",7
+"wavelet.LHH_gldm_HighGrayLevelEmphasis",1

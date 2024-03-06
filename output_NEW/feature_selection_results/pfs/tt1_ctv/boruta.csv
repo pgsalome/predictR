@@ -1,0 +1,15 @@
+"f","count"
+"wavelet.LHL_glcm_Contrast",6
+"wavelet.HLH_glszm_GrayLevelVariance",2
+"lbp.3D.k_firstorder_Minimum",9
+"CS",18
+"S",19
+"wavelet.LLH_glcm_Autocorrelation",2
+"wavelet.HHL_glrlm_LongRunEmphasis",4
+"original_firstorder_90Percentile",1
+"wavelet.LLL_glszm_SmallAreaEmphasis",1
+"wavelet.HHH_glrlm_ShortRunHighGrayLevelEmphasis",1
+"wavelet.LLL_glcm_MaximumProbability",1
+"original_gldm_LowGrayLevelEmphasis",1
+"log.sigma.2.0.mm.3D_glcm_Autocorrelation",1
+"wavelet.LHH_gldm_SmallDependenceLowGrayLevelEmphasis",1

@@ -1,0 +1,12 @@
+"f","count"
+"wavelet.HHH_glcm_ClusterShade",8
+"logarithm_firstorder_Kurtosis",2
+"lbp.3D.m2_firstorder_Kurtosis",3
+"wavelet.HHH_firstorder_Mean",1
+"lbp.3D.k_glcm_ClusterShade",3
+"wavelet.LHH_firstorder_Kurtosis",1
+"wavelet.LHL_firstorder_Kurtosis",1
+"lbp.3D.m1_glcm_ClusterShade",1
+"wavelet.HHL_gldm_LargeDependenceLowGrayLevelEmphasis",2
+"wavelet.HHL_glszm_LargeAreaLowGrayLevelEmphasis",1
+"wavelet.HHH_firstorder_Skewness",1

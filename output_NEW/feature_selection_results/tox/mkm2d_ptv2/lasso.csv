@@ -1,0 +1,12 @@
+f,count
+wavelet.HLH_glszm_LargeAreaLowGrayLevelEmphasis,104
+wavelet.LHL_glcm_SumSquares,14
+wavelet.HLH_firstorder_Median,33
+wavelet.LLL_firstorder_10Percentile,1
+wavelet.HLL_firstorder_Median,10
+log.sigma.4.0.mm.3D_firstorder_90Percentile,2
+wavelet.LLH_firstorder_Mean,4
+log.sigma.2.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,3
+log.sigma.4.0.mm.3D_gldm_LargeDependenceLowGrayLevelEmphasis,2
+wavelet.HHL_firstorder_Median,1
+iter,250

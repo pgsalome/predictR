@@ -1,0 +1,10 @@
+"f","count"
+"original_glcm_Idmn",9
+"wavelet.LLL_glcm_MaximumProbability",4
+"wavelet.LHL_glcm_ClusterShade",1
+"wavelet.LLL_firstorder_10Percentile",4
+"wavelet.LLL_firstorder_90Percentile",2
+"log.sigma.5.0.mm.3D_firstorder_Median",8
+"wavelet.HLH_glszm_HighGrayLevelZoneEmphasis",5
+"wavelet.HLH_glrlm_LowGrayLevelRunEmphasis",1
+"log.sigma.2.0.mm.3D_firstorder_10Percentile",1

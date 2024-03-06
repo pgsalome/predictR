@@ -1,0 +1,14 @@
+f,count
+wavelet.LHL_glcm_ClusterShade,125
+wavelet.HLH_glszm_SmallAreaLowGrayLevelEmphasis,9
+wavelet.LLH_glcm_JointEnergy,7
+wavelet.LHL_glrlm_ShortRunLowGrayLevelEmphasis,11
+wavelet.HLL_glcm_Idmn,2
+original_shape_Elongation,1
+wavelet.LLH_firstorder_Mean,1
+wavelet.HHH_gldm_DependenceVariance,1
+gradient_gldm_DependenceVariance,1
+lbp.3D.m2_gldm_SmallDependenceHighGrayLevelEmphasis,1
+log.sigma.2.0.mm.3D_gldm_SmallDependenceLowGrayLevelEmphasis,1
+lbp.3D.k_glszm_ZoneEntropy,1
+iter,250

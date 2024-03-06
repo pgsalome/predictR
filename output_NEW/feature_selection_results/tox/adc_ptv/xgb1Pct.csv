@@ -1,0 +1,17 @@
+"f","count"
+"log.sigma.3.0.mm.3D_glrlm_LongRunLowGrayLevelEmphasis",184
+"wavelet.HLL_firstorder_Mean",7
+"wavelet.HHH_glrlm_GrayLevelVariance",19
+"wavelet.HLL_glrlm_ShortRunHighGrayLevelEmphasis",4
+"wavelet.HLL_glcm_Imc2",2
+"log.sigma.2.0.mm.3D_glszm_GrayLevelVariance",17
+"log.sigma.1.0.mm.3D_glszm_LargeAreaLowGrayLevelEmphasis",2
+"wavelet.HHH_gldm_DependenceNonUniformity",3
+"wavelet.LLL_firstorder_Median",2
+"wavelet.LHL_glcm_DifferenceVariance",2
+"lbp.3D.m2_firstorder_Maximum",1
+"wavelet.HLL_glrlm_LongRunLowGrayLevelEmphasis",1
+"wavelet.HHH_glszm_SmallAreaHighGrayLevelEmphasis",1
+"log.sigma.1.0.mm.3D_firstorder_Mean",3
+"wavelet.HHL_firstorder_Mean",1
+"wavelet.LLL_glszm_GrayLevelNonUniformityNormalized",1

@@ -1,0 +1,12 @@
+f,count
+wavelet.HHL_firstorder_Median,54
+wavelet.HHH_firstorder_Median,116
+wavelet.HHH_glcm_ClusterShade,10
+lbp.3D.k_glszm_LowGrayLevelZoneEmphasis,6
+original_shape_Flatness,90
+wavelet.HHL_glszm_LargeAreaLowGrayLevelEmphasis,15
+wavelet.HLL_glszm_LargeAreaHighGrayLevelEmphasis,4
+wavelet.HLL_glszm_LargeAreaEmphasis,1
+log.sigma.2.0.mm.3D_glcm_Correlation,9
+wavelet.HLH_firstorder_Median,1
+iter,250

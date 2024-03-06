@@ -1,0 +1,8 @@
+f,count
+original_shape_Elongation,89
+original_shape_Flatness,58
+wavelet.HHL_glszm_LargeAreaLowGrayLevelEmphasis,2
+wavelet.LHH_firstorder_Median,1
+wavelet.HHL_firstorder_Median,2
+wavelet.HHH_firstorder_Median,1
+iter,250

@@ -1,0 +1,6 @@
+f,count
+logarithm_firstorder_RootMeanSquared,222
+wavelet.HHL_glcm_Imc1,24
+wavelet.HLL_gldm_LargeDependenceLowGrayLevelEmphasis,1
+log.sigma.4.0.mm.3D_glcm_MaximumProbability,3
+iter,250

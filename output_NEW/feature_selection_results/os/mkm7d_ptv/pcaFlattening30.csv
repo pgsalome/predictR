@@ -1,0 +1,10 @@
+f,count
+wavelet.HHH_firstorder_Median,161
+wavelet.HHL_firstorder_Median,115
+lbp.3D.m2_gldm_LargeDependenceEmphasis,3
+wavelet.HHH_glcm_ClusterShade,4
+original_shape_Flatness,39
+log.sigma.2.0.mm.3D_glcm_Correlation,21
+wavelet.HHH_firstorder_Skewness,1
+lbp.3D.m2_firstorder_90Percentile,1
+iter,250

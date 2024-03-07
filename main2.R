@@ -2,7 +2,7 @@
 
 library(predictR)
 outputDir <- '/home/pgsalome/git/predictR/output_NEW'
-features_folder <-  '/home/pgsalome/git/predictR/clidmeraddos_features/todo2'  
+features_folder <-  '/home/pgsalome/git/predictR/clidmeraddos_features/todo16'  
 outcomecsv <- paste('/home/pgsalome/R/toolbx/organized_folders/ricci_outcomes.csv',sep='')
 # datacsv <- "/home/pgsalome/R/toolbx/organized_folders/NTCP_TCP/clidmeraddos_features/ricci/features_cli_ohe.csv"
 # fsSurv(datacsv,outcomecsv,"os",outputDir,100)
@@ -32,6 +32,7 @@ print(file)
 
     # Call fsSurv function
     fsSurv(file, outcomecsv, outcometype, outputDir_md,iter,run_parallel) # Assuming '2' is a fixed parameter in your context
+    print(file)
   }
 }
 

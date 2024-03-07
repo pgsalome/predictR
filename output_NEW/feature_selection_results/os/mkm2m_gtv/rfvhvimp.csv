@@ -1,4 +1,6 @@
 "f","count"
-"density",1
+"density",2
 "sphericity",1
 "no_voxels",1
+"compactness",1
+"max",1
